@@ -17,7 +17,7 @@ public class ResourceBehavior : MonoBehaviour {
         }
         lifespan--;
 
-        if()
+        //if()
 	
 	}
 }
