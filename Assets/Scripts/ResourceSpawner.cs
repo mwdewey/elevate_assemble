@@ -4,9 +4,6 @@ using System.Collections;
 public class ResourceSpawner : MonoBehaviour {
     public GameObject cube;
     // Determines where the cubes will spawn
-    public float x;
-    public float y;
-    public float z;
 
     //Determines the rate at which the cubes will spawn
     public float percentage;
@@ -21,7 +18,7 @@ public class ResourceSpawner : MonoBehaviour {
 	void Update () {
         if (Random.Range(0, 100) <= percentage)
         {
-            Instantiate(cube, new Vector3(x, y, z), Quaternion.identity);
+            Instantiate(cube, new Vector3(Random.Range(0,10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
         }
     }
 }

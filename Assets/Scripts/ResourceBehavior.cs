@@ -3,21 +3,17 @@ using System.Collections;
 
 public class ResourceBehavior : MonoBehaviour {
 
-    public float lifespan;
-	// Use this for initialization
-	void Start () {
+    public float fallRate;
+    float translation = 0;
+    // Use this for initialization
+    void Start () {
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        if(lifespan <= 0)
-        {
-            Destroy(gameObject);
-        }
-        lifespan--;
+        translation = Time.deltaTime * fallRate;
+        transform.Translate(0, -translation, 0);
 
-        //if()
-	
-	}
+    }
 }

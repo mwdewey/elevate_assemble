@@ -2,22 +2,23 @@
 using System.Collections;
 
 public class RisingTide : MonoBehaviour {
-    Vector3 Current;
+    public float riseRate;
+    float translation = 0;
 	// Use this for initialization
 	void Start () {
-        Current = transform.position;
+       
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        Current.y++;
-        transform.position = Current;
-	
+        translation = Time.deltaTime * riseRate;
+        transform.Translate(0, translation, 0);
 	}
 
-    void OnCollisionEnter(Collision col)
+    void OnTriggerEnter(Collider col)
     {
+
         if(col.gameObject.GetComponent("ResourceBehavior") == true)
         {
             Destroy(col.gameObject);
