@@ -4,6 +4,7 @@ using System.Collections;
 public class ResourceBehavior : MonoBehaviour {
 
     public float fallRate;
+    public string resourceType;
     float translation = 0;
     // Use this for initialization
     void Start () {
