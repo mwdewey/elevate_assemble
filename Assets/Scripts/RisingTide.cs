@@ -21,6 +21,7 @@ public class RisingTide : MonoBehaviour {
 
         if(col.gameObject.GetComponent("ResourceBehavior") == true)
         {
+
             Destroy(col.gameObject);
         }
     }

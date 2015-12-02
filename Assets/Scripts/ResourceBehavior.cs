@@ -1,10 +1,12 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class ResourceBehavior : MonoBehaviour {
 
     public float fallRate;
     public string resourceType;
+    public GameObject UIhandler;
     float translation = 0;
     // Use this for initialization
     void Start () {
@@ -16,5 +18,24 @@ public class ResourceBehavior : MonoBehaviour {
         translation = Time.deltaTime * fallRate;
         transform.Translate(0, -translation, 0);
 
+    }
+
+    void OnTriggerEnter(Collider col)
+    {
+
+        if (col.gameObject.GetComponent("movement") == true)
+        {
+            if(resourceType == "grass")
+            {
+               UIhandler.GetComponent<UIBehavior>().grassCount += 1;
+            }else if(resourceType == "rock")
+            {
+                UIhandler.GetComponent<UIBehavior>().rockCount += 1;
+            }else if(resourceType == "wood")
+            {
+               UIhandler.GetComponent<UIBehavior>().woodCount += 1;
+            }
+            Destroy(gameObject);
+        }
     }
 }
