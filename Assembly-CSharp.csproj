@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\UI Behavior.cs" />
      <Compile Include="Assets\Scripts\movement.cs" />
      <Compile Include="Assets\Scripts\sticky.cs" />
+     <Compile Include="Assets\screenWrapping.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>

@@ -31,9 +31,9 @@ public class movement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        updatePlayer();
+        //updatePlayer();
 
-        updateCamera();
+        //updateCamera();
 
         if (Input.GetKeyDown(KeyCode.Alpha1) ||
             Input.GetKeyDown(KeyCode.Alpha2) ||
@@ -48,32 +48,19 @@ public class movement : MonoBehaviour {
 
         position.z = -5f;
 
-        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) position.x -= speed;
-        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) position.x += speed;
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.W)) velocity.y = jumpSpeed;
 
         position.y += velocity.y;
         transform.position = position;
 
-        velocity.y *= gravity;
 
-        // update orientation
-        if (Input.GetKey(KeyCode.LeftArrow)) isFacingLeft = true;
-        else if (Input.GetKey(KeyCode.RightArrow)) isFacingLeft = false;
 
-        if (isFacingLeft != prevFacing) transform.Rotate(0f, 180f, 0f);
 
         prevFacing = isFacingLeft;
     }
 
     void updateCamera()
     {
-        Vector3 playerPosition = transform.position;
-        Vector3 cameraPosition = Camera.main.transform.position;
 
-        cameraPosition.y = playerPosition.y + camera_offset_y;
-
-        Camera.main.transform.position = cameraPosition;
 
     }
 
