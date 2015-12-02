@@ -2,15 +2,15 @@
 using System.Collections;
 
 public class ResourceSpawner : MonoBehaviour {
-    public GameObject ResourceGreen;
-    public GameObject ResourceBlue;
-    public GameObject ResourceBlack;
+    public GameObject ResourceOne;
+    public GameObject ResourceTwo;
+    public GameObject ResourceThree;
     // Determines where the cubes will spawn
 
     //Determines the rate at which the cubes will spawn
-    public float percentageGreen;
-    public float percentageBlue;
-    public float percentageBlack;
+    public float percentageOne;
+    public float percentageTwo;
+    public float percentageThree;
     // Use this for initialization
     void Start () {
 
@@ -20,17 +20,17 @@ public class ResourceSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Random.Range(0, 100) <= percentageGreen)
+        if (Random.Range(0, 100) <= percentageOne)
         {
-            Instantiate(ResourceGreen, new Vector3(Random.Range(0,10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(ResourceOne, new Vector3(Random.Range(0,10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
         }
-        if (Random.Range(0, 100) <= percentageBlue)
+        if (Random.Range(0, 100) <= percentageTwo)
         {
-            Instantiate(ResourceBlue, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(ResourceTwo, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
         }
-        if (Random.Range(0, 100) <= percentageBlack)
+        if (Random.Range(0, 100) <= percentageThree)
         {
-            Instantiate(ResourceBlack, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+            Instantiate(ResourceThree, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
         }
     }
 }
