@@ -48,9 +48,9 @@ public class movement : MonoBehaviour {
 
         position.z = -5f;
 
-        if (Input.GetKey(KeyCode.LeftArrow)) position.x -= speed;
-        if (Input.GetKey(KeyCode.RightArrow)) position.x += speed;
-        if (Input.GetKeyDown(KeyCode.Space)) velocity.y = jumpSpeed;
+        if (Input.GetKey(KeyCode.LeftArrow) || Input.GetKey(KeyCode.A)) position.x -= speed;
+        if (Input.GetKey(KeyCode.RightArrow) || Input.GetKey(KeyCode.D)) position.x += speed;
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetKey(KeyCode.W)) velocity.y = jumpSpeed;
 
         position.y += velocity.y;
         transform.position = position;
