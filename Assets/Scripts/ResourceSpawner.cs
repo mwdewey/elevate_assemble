@@ -2,16 +2,17 @@
 using System.Collections;
 
 public class ResourceSpawner : MonoBehaviour {
-    public GameObject cube;
+    public GameObject ResourceGreen;
+    public GameObject ResourceBlue;
+    public GameObject ResourceBlack;
     // Determines where the cubes will spawn
-    public float x;
-    public float y;
-    public float z;
 
     //Determines the rate at which the cubes will spawn
-    public float percentage;
-	// Use this for initialization
-	void Start () {
+    public float percentageGreen;
+    public float percentageBlue;
+    public float percentageBlack;
+    // Use this for initialization
+    void Start () {
 
         
 
@@ -19,9 +20,17 @@ public class ResourceSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Random.Range(0, 100) <= percentage)
+        if (Random.Range(0, 100) <= percentageGreen)
         {
-            Instantiate(cube, new Vector3(x, y, z), Quaternion.identity);
+            Instantiate(ResourceGreen, new Vector3(Random.Range(0,10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+        }
+        if (Random.Range(0, 100) <= percentageBlue)
+        {
+            Instantiate(ResourceBlue, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+        }
+        if (Random.Range(0, 100) <= percentageBlack)
+        {
+            Instantiate(ResourceBlack, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
         }
     }
 }
