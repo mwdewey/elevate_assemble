@@ -3,8 +3,11 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class UIBehavior : MonoBehaviour {
+    [HideInInspector]
     public float woodCount = 0;
+    [HideInInspector]
     public float rockCount = 0;
+    [HideInInspector]
     public float grassCount = 0;
 
     public Text woodDisplay;
