@@ -12,6 +12,8 @@ public class movement : MonoBehaviour {
     public GameObject plank;
     public GameObject corner;
     public GameObject column;
+    public Material normal_mat;
+    public Material invalid_mat;
 
     public float speed = 0.1f;
     public float gravity = 0.8f;
@@ -39,7 +41,8 @@ public class movement : MonoBehaviour {
             Input.GetKeyDown(KeyCode.Alpha2) ||
             Input.GetKeyDown(KeyCode.Alpha3)) spawnObject();
 
-
+        if (cube.GetComponent<sticky>().isColliding && hasCube) cube.GetComponent<MeshRenderer>().material = invalid_mat;
+        else cube.GetComponent<MeshRenderer>().material = normal_mat;
 	}
 
     void updatePlayer()
@@ -90,13 +93,11 @@ public class movement : MonoBehaviour {
             cube.transform.localPosition = new Vector3(3.0f, 0, 0);
             cube.GetComponent<Rigidbody>().isKinematic = true;
 
-            cube.GetComponents<BoxCollider>();
-
             hasCube = true;
         }
 
         // drop cube
-        else
+        else if (!cube.GetComponent<sticky>().isColliding)
         {
             cube.transform.parent = null;
             cube.GetComponent<Rigidbody>().isKinematic = false;
@@ -105,6 +106,8 @@ public class movement : MonoBehaviour {
             hasCube = false;
         }
     }
+
+   
 
 
 }
