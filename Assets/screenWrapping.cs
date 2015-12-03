@@ -19,9 +19,9 @@ public class screenWrapping : MonoBehaviour {
     // Update is called once per frame
     void Update () {
         Vector3 boundPos = transform.position;
-        boundPos.z = player.transform.position.z;
+        boundPos.y = player.transform.position.y;
         transform.position = boundPos;
-
+        Debug.Log(transform.position.y);
     }
 
     void OnTriggerEnter(Collider hit) {
