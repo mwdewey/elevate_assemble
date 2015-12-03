@@ -23,7 +23,7 @@ public class UIBehavior : MonoBehaviour {
 	void Update () {
         woodDisplay.text = "" + woodCount;
         rockDisplay.text = "" + rockCount;
-        grassDisplay.text = "" + grassCount;
+        grassDisplay.text = grassCount.ToString();
 
     }
 }
