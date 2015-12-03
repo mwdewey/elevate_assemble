@@ -4,7 +4,8 @@ using System.Collections.Generic;
 
 public class sticky : MonoBehaviour {
 
-    public float timeLimit = 1;
+    public float timeLimit = 1.0f;
+    public float movement_give = 0.2f;
     public Material frozen_mat;
 
     float startTime;
@@ -23,8 +24,8 @@ public class sticky : MonoBehaviour {
     {
         if (checkSticky)
         {
-            if (Mathf.Abs(prevPosition.x-transform.position.x) > 0.2 ||
-                Mathf.Abs(prevPosition.y - transform.position.y) > 0.2 ||
+            if (Mathf.Abs(prevPosition.x-transform.position.x) > movement_give ||
+                Mathf.Abs(prevPosition.y - transform.position.y) > movement_give ||
                 startTime == -1)
             {
                 prevPosition = transform.position;
