@@ -18,8 +18,11 @@ public class movement : MonoBehaviour {
     public float speed = 0.1f;
     public float gravity = 0.8f;
     public float jumpSpeed = 0.9f;
+    public float placementHeight = 0.0f;
 
     public float camera_offset_y = 0.5f;
+    public float camera_offset_x= 0.0f;
+    public float camera_offset_z = 0.5f;
     public float camera_angle = 0.0f;
 
 	// Use this for initialization
@@ -41,8 +44,11 @@ public class movement : MonoBehaviour {
             Input.GetKeyDown(KeyCode.Alpha2) ||
             Input.GetKeyDown(KeyCode.Alpha3)) spawnObject();
 
-        if (cube.GetComponent<sticky>().isColliding && hasCube) cube.GetComponent<MeshRenderer>().material = invalid_mat;
-        else cube.GetComponent<MeshRenderer>().material = normal_mat;
+        if (cube != null)
+        {
+            if (cube.GetComponent<sticky>().isColliding && hasCube) cube.GetComponent<MeshRenderer>().material = invalid_mat;
+            else cube.GetComponent<MeshRenderer>().material = normal_mat;
+        }
 	}
 
     void updatePlayer()
@@ -75,8 +81,12 @@ public class movement : MonoBehaviour {
         Vector3 cameraPosition = Camera.main.transform.position;
 
         cameraPosition.y = playerPosition.y + camera_offset_y;
+        cameraPosition.x = camera_offset_x;
+        cameraPosition.z = camera_offset_z;
 
         Camera.main.transform.position = cameraPosition;
+
+        Camera.main.transform.rotation = Quaternion.Euler(camera_angle, 0, 0);
 
     }
 
@@ -90,7 +100,7 @@ public class movement : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Alpha3)) cube = (GameObject)Instantiate(column, new Vector3(0, 0, 0), Quaternion.identity);
 
             cube.transform.parent = this.transform;
-            cube.transform.localPosition = new Vector3(3.0f, 0, 0);
+            cube.transform.localPosition = new Vector3(3.0f, placementHeight, 0);
             cube.GetComponent<Rigidbody>().isKinematic = true;
 
             hasCube = true;

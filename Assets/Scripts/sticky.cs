@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public class sticky : MonoBehaviour {
 
     public float timeLimit = 1;
+    public Material frozen_mat;
+
     float startTime;
     public bool checkSticky = false;
     public bool isColliding = false;
@@ -21,8 +23,8 @@ public class sticky : MonoBehaviour {
     {
         if (checkSticky)
         {
-            if (Mathf.Abs(prevPosition.x-transform.position.x) > 0.05 ||
-                Mathf.Abs(prevPosition.y - transform.position.y) > 0.05 ||
+            if (Mathf.Abs(prevPosition.x-transform.position.x) > 0.2 ||
+                Mathf.Abs(prevPosition.y - transform.position.y) > 0.2 ||
                 startTime == -1)
             {
                 prevPosition = transform.position;
@@ -33,6 +35,7 @@ public class sticky : MonoBehaviour {
             {
                 Rigidbody rb = GetComponent<Rigidbody>();
                 rb.constraints = RigidbodyConstraints.FreezeAll;
+                GetComponent<MeshRenderer>().material = frozen_mat;
             }
         }
 
