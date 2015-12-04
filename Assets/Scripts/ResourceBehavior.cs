@@ -23,7 +23,7 @@ public class ResourceBehavior : MonoBehaviour {
     void OnTriggerEnter(Collider col)
     {
 
-        if (col.gameObject.GetComponent("movement") == true)
+        if (col.gameObject.GetComponent("PlayerMovement") == true)
         {
             if(resourceType == "grass")
             {

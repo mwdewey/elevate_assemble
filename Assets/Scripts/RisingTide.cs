@@ -4,6 +4,7 @@ using System.Collections;
 public class RisingTide : MonoBehaviour {
     public float riseRate;
     float translation = 0;
+    bool GameOver = false;
 	// Use this for initialization
 	void Start () {
        
@@ -12,8 +13,11 @@ public class RisingTide : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        translation = Time.deltaTime * riseRate;
-        transform.Translate(0, translation, 0);
+        if (GameOver == false)
+        {
+            translation = Time.deltaTime * riseRate;
+            transform.Translate(0, translation, 0);
+        }
 	}
 
     void OnTriggerEnter(Collider col)
@@ -23,6 +27,11 @@ public class RisingTide : MonoBehaviour {
         {
 
             Destroy(col.gameObject);
+        }
+        if (col.gameObject.GetComponent("PlayerMovement") == true)
+        {
+            Destroy(col.gameObject);
+            GameOver = true;
         }
     }
 }

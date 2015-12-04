@@ -20,22 +20,25 @@ public class ResourceSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        GameObject newObj;
+        if (GameObject.FindGameObjectWithTag("Player") == true)
+        {
+            GameObject newObj;
 
-        if (Random.Range(0, 100) <= percentageOne)
-        {
-            newObj=Instantiate(ResourceOne, new Vector3(Random.Range(0,10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity) as GameObject;
-            newObj.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;       
-        }
-        if (Random.Range(0, 100) <= percentageTwo)
-        {
-            newObj = Instantiate(ResourceTwo, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity) as GameObject;
-            newObj.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
-        }
-        if (Random.Range(0, 100) <= percentageThree)
-        {
-            newObj = Instantiate(ResourceThree, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity) as GameObject;
-            newObj.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+            if (Random.Range(0, 100) <= percentageOne)
+            {
+                newObj = Instantiate(ResourceOne, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity) as GameObject;
+                newObj.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+            }
+            if (Random.Range(0, 100) <= percentageTwo)
+            {
+                newObj = Instantiate(ResourceTwo, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity) as GameObject;
+                newObj.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+            }
+            if (Random.Range(0, 100) <= percentageThree)
+            {
+                newObj = Instantiate(ResourceThree, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity) as GameObject;
+                newObj.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+            }
         }
     }
 }

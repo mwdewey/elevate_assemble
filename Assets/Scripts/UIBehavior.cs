@@ -13,6 +13,7 @@ public class UIBehavior : MonoBehaviour {
     public Text woodDisplay;
     public Text rockDisplay;
     public Text grassDisplay;
+    public Text gameOverDisplay;
 
 	// Use this for initialization
 	void Start () {
@@ -24,6 +25,11 @@ public class UIBehavior : MonoBehaviour {
         woodDisplay.text = "" + woodCount;
         rockDisplay.text = "" + rockCount;
         grassDisplay.text = grassCount.ToString();
+        if (GameObject.FindGameObjectWithTag("Player") == false)
+        {
+            gameOverDisplay.text = "Game Over";
+        }
+        
 
     }
 }
