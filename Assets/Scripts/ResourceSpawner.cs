@@ -6,7 +6,7 @@ public class ResourceSpawner : MonoBehaviour {
     public GameObject ResourceTwo;
     public GameObject ResourceThree;
     // Determines where the cubes will spawn
-
+    public UIBehavior UIHandler;
     //Determines the rate at which the cubes will spawn
     public float percentageOne;
     public float percentageTwo;
@@ -20,17 +20,22 @@ public class ResourceSpawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        GameObject newObj;
+
         if (Random.Range(0, 100) <= percentageOne)
         {
-            Instantiate(ResourceOne, new Vector3(Random.Range(0,10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+            newObj=Instantiate(ResourceOne, new Vector3(Random.Range(0,10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity) as GameObject;
+            newObj.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;       
         }
         if (Random.Range(0, 100) <= percentageTwo)
         {
-            Instantiate(ResourceTwo, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+            newObj = Instantiate(ResourceTwo, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity) as GameObject;
+            newObj.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
         }
         if (Random.Range(0, 100) <= percentageThree)
         {
-            Instantiate(ResourceThree, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity);
+            newObj = Instantiate(ResourceThree, new Vector3(Random.Range(0, 10), gameObject.transform.position.y, gameObject.transform.position.z), Quaternion.identity) as GameObject;
+            newObj.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
         }
     }
 }
