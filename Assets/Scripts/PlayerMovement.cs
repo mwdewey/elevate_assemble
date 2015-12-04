@@ -33,8 +33,10 @@ public class PlayerMovement : MonoBehaviour {
     private float jumpSpeed;
 
     //Camera stuff
-    public float cameraOffsetY;
-    public float cameraAngle;
+    public float camera_offset_y = 0.5f;
+    public float camera_offset_x = 0.0f;
+    public float camera_offset_z = 0.5f;
+    public float camera_angle = 0.0f;
 	// Use this for initialization
 	void Start () {
         isMovingHorizontally = false;
@@ -93,9 +95,15 @@ public class PlayerMovement : MonoBehaviour {
         controller.Move(velocity * Time.deltaTime);
     }
     void UpdateCamera() {
-        Vector3 cameraPos = Camera.main.transform.position;
-        cameraPos.y = transform.position.y + cameraOffsetY;
-        Camera.main.transform.position = cameraPos;
+        Vector3 playerPosition = transform.position;
+        Vector3 cameraPosition = Camera.main.transform.position;
+
+        cameraPosition.y = playerPosition.y + camera_offset_y;
+        cameraPosition.x = camera_offset_x;
+        cameraPosition.z = camera_offset_z;
+
+        Camera.main.transform.position = cameraPosition;
+        Camera.main.transform.rotation = Quaternion.Euler(camera_angle, 0, 0);
     }
     Vector3 groundedJump(Vector3 inVec) {
         inVec.y = jumpSpeed;

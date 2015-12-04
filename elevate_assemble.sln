@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
@@ -24,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-																							GlobalSection(MonoDevelopProperties) = preSolution
+																																			GlobalSection(MonoDevelopProperties) = preSolution
 =======
 																								GlobalSection(MonoDevelopProperties) = preSolution
 >>>>>>> 9dd71da2c8a672d2ebe10fcef94f2a4ee7fc05ef
@@ -65,28 +64,6 @@ Global
 		$3.inheritsSet = Mono
 		$3.inheritsScope = text/plain
 		$3.scope = text/plain
-	EndGlobalSection
-
-EndGlobal
-=======
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{D20FEE87-5734-DE12-8CD0-67A6F28F5FCD}") = "elevate_assemble", "Assembly-CSharp.csproj", "{27F0C418-78E0-1402-13F6-BF65E1ED2C88}"
-EndProject
-Global
-	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{27F0C418-78E0-1402-13F6-BF65E1ED2C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{27F0C418-78E0-1402-13F6-BF65E1ED2C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{27F0C418-78E0-1402-13F6-BF65E1ED2C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{27F0C418-78E0-1402-13F6-BF65E1ED2C88}.Release|Any CPU.Build.0 = Release|Any CPU
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 																	GlobalSection(MonoDevelopProperties) = preSolution
 =======
@@ -132,4 +109,3 @@ Global
 	EndGlobalSection
 
 EndGlobal
->>>>>>> 42d7fc3b2e67c81761b9dd8e28041b9749522ca0

@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class movement : MonoBehaviour {
+public class ObjectPlacement : MonoBehaviour
+{
 
-    Vector3 velocity;
     GameObject cube;
     bool isFacingLeft;
     bool prevFacing;
@@ -15,22 +15,20 @@ public class movement : MonoBehaviour {
     public Material normal_mat;
     public Material invalid_mat;
 
-    public float speed = 0.1f;
-    public float gravity = 0.8f;
-    public float jumpSpeed = 0.9f;
     public float placementHeight = 0.0f;
 
-	// Use this for initialization
-	void Start () {
-        velocity = new Vector3(0, 0, 0);
+    // Use this for initialization
+    void Start()
+    {
         isFacingLeft = false;
         prevFacing = false;
         hasCube = false;
         cube = null;
-	}
-	
-	// Update is called once per frame
-	void Update () {
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         if (Input.GetKeyDown(KeyCode.Alpha1) ||
             Input.GetKeyDown(KeyCode.Alpha2) ||
@@ -43,7 +41,7 @@ public class movement : MonoBehaviour {
         }
 
 
-	}
+    }
 
     void spawnObject()
     {
