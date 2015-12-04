@@ -1,6 +1,8 @@
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2008
 
+Project("{D20FEE87-5734-DE12-8CD0-67A6F28F5FCD}") = "elevate_assemble", "Assembly-CSharp-firstpass.csproj", "{417C0F8A-3776-10F7-2C8C-1275BE042764}"
+EndProject
 Project("{D20FEE87-5734-DE12-8CD0-67A6F28F5FCD}") = "elevate_assemble", "Assembly-CSharp.csproj", "{27F0C418-78E0-1402-13F6-BF65E1ED2C88}"
 EndProject
 Global
@@ -9,6 +11,10 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{417C0F8A-3776-10F7-2C8C-1275BE042764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{417C0F8A-3776-10F7-2C8C-1275BE042764}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{417C0F8A-3776-10F7-2C8C-1275BE042764}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{417C0F8A-3776-10F7-2C8C-1275BE042764}.Release|Any CPU.Build.0 = Release|Any CPU
 		{27F0C418-78E0-1402-13F6-BF65E1ED2C88}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{27F0C418-78E0-1402-13F6-BF65E1ED2C88}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{27F0C418-78E0-1402-13F6-BF65E1ED2C88}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -17,7 +23,7 @@ Global
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-															GlobalSection(MonoDevelopProperties) = preSolution
+																						GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1
