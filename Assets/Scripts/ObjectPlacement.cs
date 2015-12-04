@@ -15,7 +15,8 @@ public class ObjectPlacement : MonoBehaviour
     public Material normal_mat;
     public Material invalid_mat;
 
-    public float placementHeight = 0.0f;
+    public float placement_X = 0.0f;
+    public float placement_Y= 0.0f;
 
     // Use this for initialization
     void Start()
@@ -53,7 +54,7 @@ public class ObjectPlacement : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha3)) cube = (GameObject)Instantiate(column, new Vector3(0, 0, 0), Quaternion.identity);
 
             cube.transform.parent = this.transform;
-            cube.transform.localPosition = new Vector3(3.0f, placementHeight, 0);
+            cube.transform.localPosition = new Vector3(placement_X, placement_Y, 0);
             cube.GetComponent<Rigidbody>().isKinematic = true;
 
             hasCube = true;
