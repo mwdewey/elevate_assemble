@@ -1,10 +1,14 @@
 fileFormatVersion: 2
 guid: 7abc9967e075775488e10d96cd5f05c0
-timeCreated: 1449333002
+timeCreated: 1449349619
 licenseType: Free
 MonoImporter:
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - rock: {fileID: 170554, guid: a5674efe8fe13ba4f82b41abb8f98222, type: 2}
+  - grass: {fileID: 110238, guid: 0a353e241a12a734bb625761a44c89d6, type: 2}
+  - wood: {fileID: 116486, guid: ac561d14cb8ccef498e38f344bc8f934, type: 2}
+  - UIHandler: {fileID: 11470856, guid: fea2df91cd6129744b8f1a6a753eca54, type: 2}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

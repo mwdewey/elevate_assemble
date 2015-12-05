@@ -9,19 +9,22 @@ public class WebSpawner : MonoBehaviour {
     string url = "http://dvm.io/api/getObjects.php";
 
     public bool run;
+    public float minObjRate;  // objects per second
+    float timeSinceLastObj;
     bool prevB;
     Worker w;
     Thread workerThread;
 
-    public GameObject obj1;
-    public GameObject obj2;
-    public GameObject obj3;
+    public GameObject rock;
+    public GameObject grass;
+    public GameObject wood;
     public UIBehavior UIHandler;
 
     void Start()
     {
-        run = false;
+        if (run) startLoop();
         prevB = run;
+        timeSinceLastObj = 0;
     }
 	
 	void Update () {
@@ -43,27 +46,47 @@ public class WebSpawner : MonoBehaviour {
         // if any objects exist in queue, spawn
         if (w != null)
         {
+            
             foreach (ResourceObject resObj in w.getResources())
             {
+                timeSinceLastObj = 0;
                 Debug.Log(resObj.objType + " " + resObj.position);
 
-                Vector3 pos = new Vector3(map((float)resObj.position, 0, 100f, -8f, 8f), 7, -5);
+                Vector3 pos = new Vector3(map((float)resObj.position, 0, 100f, -6f, 6f), 7, -5);
+                Quaternion rot;
 
                 switch (resObj.objType)
                 {
+                    // rock
                     case 1:
-                        (Instantiate(obj1, pos, Quaternion.identity) as GameObject).GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                        rot = Quaternion.Euler(-90, 0, 0);
+                        (Instantiate(rock, pos, rot) as GameObject).GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
                         break;
+                    // grass
                     case 2:
-                        (Instantiate(obj2, pos, Quaternion.identity) as GameObject).GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                        rot = Quaternion.Euler(-90, 0, 0);
+                        (Instantiate(grass, pos, rot) as GameObject).GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
                         break;
+                    // wood
                     case 3:
-                        (Instantiate(obj3, pos, Quaternion.identity) as GameObject).GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                        rot = Quaternion.Euler(0, 0, 0);
+                        (Instantiate(wood, pos, rot) as GameObject).GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
                         break;
                     default: break;
                 }
             }
             w.getResources().Clear();
+
+            // local object spawner if web is insufficient
+            if (timeSinceLastObj > 1f / minObjRate)
+            {
+                ResourceObject resObj = new ResourceObject(Random.Range(1, 3), Random.Range(0,100));
+                w.getResources().Add(resObj);
+
+                timeSinceLastObj = 0;
+            }
+
+            timeSinceLastObj += Time.deltaTime;
         }
 
 	}
