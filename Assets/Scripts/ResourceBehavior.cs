@@ -15,15 +15,15 @@ public class ResourceBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        translation = Time.deltaTime * fallRate;
-        transform.Translate(0, -translation, 0);
+        //translation = Time.deltaTime * fallRate;
+        //transform.Translate(0, -translation, 0);
 
     }
 
     void OnTriggerEnter(Collider col)
     {
 
-        if (col.gameObject.GetComponent("PlayerMovement") == true)
+        if (col.gameObject.GetComponent<PlayerMovement>() == true)
         {
             if(resourceType == "grass")
             {

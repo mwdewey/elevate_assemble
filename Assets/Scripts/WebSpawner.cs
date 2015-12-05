@@ -25,6 +25,10 @@ public class WebSpawner : MonoBehaviour {
     }
 	
 	void Update () {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            run = !run;
+        }
 
         // if run just changed
         if (run != prevB)
@@ -43,7 +47,7 @@ public class WebSpawner : MonoBehaviour {
             {
                 Debug.Log(resObj.objType + " " + resObj.position);
 
-                Vector3 pos = new Vector3(resObj.position, 0, 0);
+                Vector3 pos = new Vector3(map((float)resObj.position, 0, 100f, -8f, 8f), 7, -5);
 
                 switch (resObj.objType)
                 {
@@ -70,6 +74,21 @@ public class WebSpawner : MonoBehaviour {
         workerThread = new Thread(w.task);
         workerThread.Start();
     }
+
+    float map(float s, float a1, float a2, float b1, float b2)
+    {
+        return b1 + (s - a1) * (b2 - b1) / (a2 - a1);
+    }
+
+    void OnDisable()
+    {
+        if (w != null) w.stopTask();
+    }
+
+    void OnDestroy()
+    {
+        if (w != null) w.stopTask();
+    }
 }
 
 class Worker
@@ -83,6 +102,10 @@ class Worker
         resource_url = _resource_url;
         run = true;
         resources = new List<ResourceObject>();
+
+        // clear any old resources in DB
+        getResourcesWeb();
+        resources.Clear();
     }
 
     public void task()
