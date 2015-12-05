@@ -15,9 +15,9 @@ public class WebSpawner : MonoBehaviour {
     Worker w;
     Thread workerThread;
 
-    public GameObject rock;
-    public GameObject grass;
-    public GameObject wood;
+    public GameObject rock;  // index 1
+    public GameObject grass; // index 2
+    public GameObject wood;  // index 3
     public UIBehavior UIHandler;
 
     void Start()
@@ -80,8 +80,7 @@ public class WebSpawner : MonoBehaviour {
             // local object spawner if web is insufficient
             if (timeSinceLastObj > 1f / minObjRate)
             {
-                ResourceObject resObj = new ResourceObject(Random.Range(1, 3), Random.Range(0,100));
-                w.getResources().Add(resObj);
+                w.getResources().Add(new ResourceObject(Random.Range(1, 3), Random.Range(0, 100)));
 
                 timeSinceLastObj = 0;
             }
@@ -119,12 +118,15 @@ class Worker
     string resource_url;
     bool run;
     List<ResourceObject> resources;
+    WebClient client;
 
     public Worker(string _resource_url)
     {
         resource_url = _resource_url;
         run = true;
         resources = new List<ResourceObject>();
+        client = new WebClient();
+        client.Headers.Clear();
 
         // clear any old resources in DB
         getResourcesWeb();
@@ -147,7 +149,6 @@ class Worker
 
     void getResourcesWeb()
     {
-        WebClient client = new WebClient();
         string returnText = client.DownloadString(resource_url);
 
         var json = JSON.Parse(returnText);
