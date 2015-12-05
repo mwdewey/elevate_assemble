@@ -6,7 +6,6 @@ public class sticky : MonoBehaviour {
 
     public float timeLimit = 1.0f;
     public float movement_give = 0.2f;
-    public Material frozen_mat;
 
     float startTime;
     public bool checkSticky = false;
@@ -34,9 +33,9 @@ public class sticky : MonoBehaviour {
 
             else if ((Time.realtimeSinceStartup - startTime) >= timeLimit)
             {
-                Rigidbody rb = GetComponent<Rigidbody>();
+                Rigidbody rb = this.GetComponent<Rigidbody>();
                 rb.constraints = RigidbodyConstraints.FreezeAll;
-                GetComponent<MeshRenderer>().material = frozen_mat;
+                this.GetComponent<MeshRenderer>().material = this.GetComponent<Materials>().frozen;
             }
         }
 

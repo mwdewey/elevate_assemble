@@ -12,8 +12,6 @@ public class ObjectPlacement : MonoBehaviour
     public GameObject plank;
     public GameObject corner;
     public GameObject column;
-    public Material normal_mat;
-    public Material invalid_mat;
 
     public float placement_X = 0.0f;
     public float placement_Y= 0.0f;
@@ -37,8 +35,8 @@ public class ObjectPlacement : MonoBehaviour
 
         if (cube != null)
         {
-            if (cube.GetComponent<sticky>().isColliding && hasCube) cube.GetComponent<MeshRenderer>().material = invalid_mat;
-            else cube.GetComponent<MeshRenderer>().material = normal_mat;
+            if (cube.GetComponent<sticky>().isColliding && hasCube) cube.GetComponent<MeshRenderer>().material = cube.GetComponent<Materials>().invalid;
+            else cube.GetComponent<MeshRenderer>().material = cube.GetComponent<Materials>().normal;
         }
 
 
