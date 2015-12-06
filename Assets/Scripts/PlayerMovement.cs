@@ -30,7 +30,8 @@ public class PlayerMovement : MonoBehaviour {
     // The initial jump speed, v_i. Editing this value is counterintuitive from the 
     // Unity editor, it makes more sense to tweak jumpHeight & timeToApex (Basically floatiness).
     // This will be calculated on init.
-    private float jumpSpeed;
+    [HideInInspector]
+    public float jumpSpeed;
 
     //Camera stuff
     public float camera_offset_y = 0.5f;
