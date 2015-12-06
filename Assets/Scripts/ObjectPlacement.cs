@@ -8,11 +8,13 @@ public class ObjectPlacement : MonoBehaviour
     bool isFacingLeft;
     bool prevFacing;
     bool hasCube;
+    AudioSource audio_source;
 
     public GameObject rock;
     public GameObject grass;
     public GameObject wood;
     public UIBehavior UIHandler;
+    public AudioClip placement_clip;
 
     public float placement_X = 0.0f;
     public float placement_Y= 0.0f;
@@ -24,6 +26,7 @@ public class ObjectPlacement : MonoBehaviour
         prevFacing = false;
         hasCube = false;
         cube = null;
+        audio_source = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -55,6 +58,7 @@ public class ObjectPlacement : MonoBehaviour
                 {
                     cube = (GameObject)Instantiate(rock, new Vector3(0, 0, 0), Quaternion.identity);
                     UIHandler.rockCount--;
+                    audio_source.PlayOneShot(placement_clip, 1f);
                 }
 
                 else return;
@@ -67,6 +71,7 @@ public class ObjectPlacement : MonoBehaviour
                 {
                     cube = (GameObject)Instantiate(grass, new Vector3(0, 0, 0), Quaternion.identity);
                     UIHandler.grassCount--;
+                    audio_source.PlayOneShot(placement_clip, 1f);
                 }
 
                 else return;
@@ -79,6 +84,7 @@ public class ObjectPlacement : MonoBehaviour
                 {
                     cube = (GameObject)Instantiate(wood, new Vector3(0, 0, 0), Quaternion.identity);
                     UIHandler.woodCount--;
+                    audio_source.PlayOneShot(placement_clip, 1f);
                 }
 
                 else return;

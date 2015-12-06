@@ -19,7 +19,7 @@ public class stone_landing : MonoBehaviour {
         if (currentPlays < maxPlays)
         {
             float vol = Random.Range(0, 10f);
-            source.pitch = Random.Range(0.75f, 1.25f);
+            source.pitch = Random.Range(0.5f, 0.75f);
 
             source.PlayOneShot(clip, vol);
             currentPlays++;

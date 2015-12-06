@@ -87,7 +87,8 @@ public class PlayerMovement : MonoBehaviour {
 
         // when character lands, play landing sound
         if (isGroundedPrev != controller.isGrounded && controller.isGrounded) {
-            float vol = velocity.magnitude * 0.2f;
+            Debug.Log(velocity.y);
+            float vol = Mathf.Abs(velocity.y) * 0.01f;
             audio_source.PlayOneShot(land_jump_sound, vol);
         }
         isGroundedPrev = controller.isGrounded;

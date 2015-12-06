@@ -22,10 +22,10 @@ public class UIBehavior : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        woodCount = 0;
-        rockCount = 0;
-        grassCount = 0;
-        level =Application.loadedLevelName;
+        //woodCount = 0;
+        //rockCount = 0;
+        //grassCount = 0;
+        level = Application.loadedLevelName;
 
     }
 	
