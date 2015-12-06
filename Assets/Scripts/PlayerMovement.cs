@@ -10,9 +10,12 @@ public class PlayerMovement : MonoBehaviour {
     // keeps track of where we were previously facing.
     bool prevFacing;
     bool isMovingHorizontally;
+    bool isGroundedPrev;
 
     Vector3 velocity;
     CharacterController controller;
+    AudioSource audio_source;
+
 
 
 
@@ -38,11 +41,16 @@ public class PlayerMovement : MonoBehaviour {
     public float camera_offset_x = 0.0f;
     public float camera_offset_z = 0.5f;
     public float camera_angle = 0.0f;
+
+    //Audio 
+    public AudioClip land_jump_sound;
+
 	// Use this for initialization
 	void Start () {
         isMovingHorizontally = false;
         isFacingLeft = false;
         prevFacing = false;
+        isGroundedPrev = true;
         /*
             Holy 8th grade physics, batman! Using the standard motion equation:
             
@@ -60,6 +68,7 @@ public class PlayerMovement : MonoBehaviour {
 
         controller = GetComponent<CharacterController>();
 
+        audio_source = GetComponent<AudioSource>();
 	}
 	
 	// Update is called once per frame
@@ -75,6 +84,15 @@ public class PlayerMovement : MonoBehaviour {
                 velocity = groundedJump(velocity);
             }
         }
+
+        // when character lands, play landing sound
+        if (isGroundedPrev != controller.isGrounded && controller.isGrounded) {
+            float vol = velocity.magnitude * 0.2f;
+            audio_source.PlayOneShot(land_jump_sound, vol);
+        }
+        isGroundedPrev = controller.isGrounded;
+        
+
         //Gravity.
         if (!controller.isGrounded) {
             velocity.y -= gravity * Time.deltaTime;
