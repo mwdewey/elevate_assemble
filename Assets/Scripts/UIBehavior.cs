@@ -9,6 +9,8 @@ public class UIBehavior : MonoBehaviour {
     public float rockCount = 0;
     [HideInInspector]
     public float grassCount = 0;
+    float GOtime = 0;
+    string level;
 
     public Text woodDisplay;
     public Text rockDisplay;
@@ -20,8 +22,9 @@ public class UIBehavior : MonoBehaviour {
         woodCount = 0;
         rockCount = 0;
         grassCount = 0;
-        
-	}
+        level =Application.loadedLevelName;
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -31,6 +34,11 @@ public class UIBehavior : MonoBehaviour {
         if (GameObject.FindGameObjectWithTag("Player") == false)
         {
             gameOverDisplay.text = "Game Over";
+            GOtime++;
+        }
+        if(GOtime >= 120)
+        {
+            Application.LoadLevel(level);
         }
         
 
