@@ -54,23 +54,27 @@ public class WebSpawner : MonoBehaviour {
 
                 Vector3 pos = new Vector3(map((float)resObj.position, 0, 100f, -6f, 6f), 7, -5);
                 Quaternion rot;
+                GameObject objTemp;
 
                 switch (resObj.objType)
                 {
                     // rock
                     case 1:
                         rot = Quaternion.Euler(-90, 0, 0);
-                        (Instantiate(rock, pos, rot) as GameObject).GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                        objTemp = Instantiate(rock, pos, rot) as GameObject;
+                        objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
                         break;
                     // grass
                     case 2:
                         rot = Quaternion.Euler(-90, 0, 0);
-                        (Instantiate(grass, pos, rot) as GameObject).GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                        objTemp = Instantiate(grass, pos, rot) as GameObject;
+                        objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
                         break;
                     // wood
                     case 3:
                         rot = Quaternion.Euler(0, 0, 0);
-                        (Instantiate(wood, pos, rot) as GameObject).GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                        objTemp = Instantiate(wood, pos, rot) as GameObject;
+                        objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
                         break;
                     default: break;
                 }

@@ -9,9 +9,10 @@ public class ObjectPlacement : MonoBehaviour
     bool prevFacing;
     bool hasCube;
 
-    public GameObject plank;
-    public GameObject corner;
-    public GameObject column;
+    public GameObject rock;
+    public GameObject grass;
+    public GameObject wood;
+    public UIBehavior UIHandler;
 
     public float placement_X = 0.0f;
     public float placement_Y= 0.0f;
@@ -47,9 +48,41 @@ public class ObjectPlacement : MonoBehaviour
         // spawn cube
         if (!hasCube)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1)) cube = (GameObject)Instantiate(plank, new Vector3(0, 0, 0), Quaternion.identity);
-            if (Input.GetKeyDown(KeyCode.Alpha2)) cube = (GameObject)Instantiate(corner, new Vector3(0, 0, 0), Quaternion.identity);
-            if (Input.GetKeyDown(KeyCode.Alpha3)) cube = (GameObject)Instantiate(column, new Vector3(0, 0, 0), Quaternion.identity);
+            // rock
+            if (Input.GetKeyDown(KeyCode.Alpha1))
+            {
+                if (UIHandler.rockCount > 0)
+                {
+                    cube = (GameObject)Instantiate(rock, new Vector3(0, 0, 0), Quaternion.identity);
+                    UIHandler.rockCount--;
+                }
+
+                else return;
+            }
+
+            // grass
+            if (Input.GetKeyDown(KeyCode.Alpha2))
+            {
+                if (UIHandler.grassCount > 0 && false)
+                {
+                    cube = (GameObject)Instantiate(grass, new Vector3(0, 0, 0), Quaternion.identity);
+                    UIHandler.grassCount--;
+                }
+
+                else return;
+            }
+
+            // wood
+            if (Input.GetKeyDown(KeyCode.Alpha3))
+            {
+                if (UIHandler.woodCount > 0)
+                {
+                    cube = (GameObject)Instantiate(wood, new Vector3(0, 0, 0), Quaternion.identity);
+                    UIHandler.woodCount--;
+                }
+
+                else return;
+            }
 
             cube.transform.parent = this.transform;
             cube.transform.localPosition = new Vector3(placement_X, placement_Y, 0);
