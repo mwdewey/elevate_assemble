@@ -12,10 +12,16 @@ public class UIBehavior : MonoBehaviour {
     float GOtime = 0;
     string level;
 
+    public Sprite grassImage;
+    public Sprite stoneImage;
+    public Sprite woodImage;
+
     public Text woodDisplay;
     public Text rockDisplay;
     public Text grassDisplay;
     public Text gameOverDisplay;
+    public Image resource;
+    int select = 0;
 
 	// Use this for initialization
 	void Start () {
@@ -40,7 +46,28 @@ public class UIBehavior : MonoBehaviour {
         {
             Application.LoadLevel(level);
         }
-        
+        if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+        {
+            ResourceSelect();
+        }
 
+    }
+    void ResourceSelect()
+    {
+        select++;
+        switch (select)
+        {
+            case 0:
+                resource.sprite = grassImage;
+                break;
+            case 1:
+                resource.sprite = stoneImage;
+                break;
+            case 2:
+                resource.sprite = woodImage;
+                select = -1;
+                break;
+        }
+            
     }
 }
