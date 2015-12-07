@@ -4,7 +4,7 @@ using System.Collections;
 public class ObjectPlacement : MonoBehaviour
 {
 
-    GameObject cube;
+    GameObject heldObject;
     bool isFacingLeft;
     bool prevFacing;
     bool hasCube;
@@ -25,7 +25,7 @@ public class ObjectPlacement : MonoBehaviour
         isFacingLeft = false;
         prevFacing = false;
         hasCube = false;
-        cube = null;
+        heldObject = null;
         audio_source = GetComponent<AudioSource>();
     }
 
@@ -37,10 +37,10 @@ public class ObjectPlacement : MonoBehaviour
             Input.GetKeyDown(KeyCode.Alpha2) ||
             Input.GetKeyDown(KeyCode.Alpha3)) spawnObject();
 
-        if (cube != null)
+        if (heldObject != null)
         {
-            if (cube.GetComponent<sticky>().isColliding && hasCube) cube.GetComponent<MeshRenderer>().material = cube.GetComponent<Materials>().invalid;
-            else cube.GetComponent<MeshRenderer>().material = cube.GetComponent<Materials>().normal;
+            if (heldObject.GetComponent<sticky>().isColliding && hasCube) heldObject.GetComponent<MeshRenderer>().material = heldObject.GetComponent<Materials>().invalid;
+            else heldObject.GetComponent<MeshRenderer>().material = heldObject.GetComponent<Materials>().normal;
         }
 
 
@@ -56,7 +56,7 @@ public class ObjectPlacement : MonoBehaviour
             {
                 if (UIHandler.rockCount > 0)
                 {
-                    cube = (GameObject)Instantiate(rock, new Vector3(0, 0, 0), Quaternion.identity);
+                    heldObject = (GameObject)Instantiate(rock, new Vector3(0, 0, 0), Quaternion.identity);
                     UIHandler.rockCount--;
                     audio_source.PlayOneShot(placement_clip, 1f);
                 }
@@ -69,7 +69,7 @@ public class ObjectPlacement : MonoBehaviour
             {
                 if (UIHandler.grassCount > 0 && false)
                 {
-                    cube = (GameObject)Instantiate(grass, new Vector3(0, 0, 0), Quaternion.identity);
+                    heldObject = (GameObject)Instantiate(grass, new Vector3(0, 0, 0), Quaternion.identity);
                     UIHandler.grassCount--;
                     audio_source.PlayOneShot(placement_clip, 1f);
                 }
@@ -82,7 +82,7 @@ public class ObjectPlacement : MonoBehaviour
             {
                 if (UIHandler.woodCount > 0)
                 {
-                    cube = (GameObject)Instantiate(wood, new Vector3(0, 0, 0), Quaternion.identity);
+                    heldObject = (GameObject)Instantiate(wood, new Vector3(0, 0, 0), Quaternion.identity);
                     UIHandler.woodCount--;
                     audio_source.PlayOneShot(placement_clip, 1f);
                 }
@@ -90,19 +90,19 @@ public class ObjectPlacement : MonoBehaviour
                 else return;
             }
 
-            cube.transform.parent = this.transform;
-            cube.transform.localPosition = new Vector3(placement_X, placement_Y, 0);
-            cube.GetComponent<Rigidbody>().isKinematic = true;
+            heldObject.transform.parent = this.transform;
+            heldObject.transform.localPosition = new Vector3(placement_X, placement_Y, 0);
+            heldObject.GetComponent<Rigidbody>().isKinematic = true;
 
             hasCube = true;
         }
 
-        // drop cube
-        else if (!cube.GetComponent<sticky>().isColliding)
+        // drop cube if not colliding
+        else if (!heldObject.GetComponent<sticky>().isColliding)
         {
-            cube.transform.parent = null;
-            cube.GetComponent<Rigidbody>().isKinematic = false;
-            cube.GetComponent<sticky>().checkSticky = true;
+            heldObject.transform.parent = null;
+            heldObject.GetComponent<Rigidbody>().isKinematic = false;
+            heldObject.GetComponent<sticky>().checkSticky = true;
 
             hasCube = false;
         }

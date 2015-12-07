@@ -12,6 +12,7 @@ public class WebSpawner : MonoBehaviour {
     WebSocket ws;
     List<ResourceObject> resources;
     float prevPos;
+    int prevScore;
 
     public GameObject rock;  // index 1
     public GameObject grass; // index 2
@@ -23,6 +24,7 @@ public class WebSpawner : MonoBehaviour {
         timeSinceLastObj = 0;
         resources = new List<ResourceObject>();
         prevPos = transform.position.x;
+        prevScore = Mathf.RoundToInt(transform.position.y);
 
         ws = new WebSocket("ws://dvm.io:8081/socket.io/?EIO=3&transport=websocket");
         ws.OnError += (sender, e) => Debug.Log("ERROR: " + e.Message);
@@ -110,10 +112,16 @@ public class WebSpawner : MonoBehaviour {
         // player tracker
         if (prevPos != transform.position.x)
         {
-            ws.SendAsync("42[\"pos\",\"" + (transform.position.x + 6) + "\"]",null);
+            ws.SendAsync("42[\"pos\"," + (transform.position.x + 6) + "]",null);
         }
         prevPos = transform.position.x;
-        
+
+        // score tracker
+        if (prevScore != Mathf.RoundToInt(transform.position.y))
+        {
+            ws.SendAsync("42[\"score\"," + Mathf.RoundToInt(transform.position.y) + "]", null);
+        }
+        prevScore = Mathf.RoundToInt(transform.position.y);
 
 	}
 
