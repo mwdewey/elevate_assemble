@@ -16,6 +16,7 @@ public class WebSpawner : MonoBehaviour {
     float prevGrass;
     float prevRock;
     float prevWood;
+    float countSync;
 
     public GameObject rock;  // index 1
     public GameObject grass; // index 2
@@ -142,6 +143,14 @@ public class WebSpawner : MonoBehaviour {
         {
             ws.SendAsync("42[\"invG\"," + UIHandler.grassCount + "]", null);
         }
+        if (countSync > 1)
+        {
+            ws.SendAsync("42[\"invR\"," + UIHandler.rockCount + "]", null);
+            ws.SendAsync("42[\"invW\"," + UIHandler.woodCount + "]", null);
+            ws.SendAsync("42[\"invG\"," + UIHandler.grassCount + "]", null);
+            countSync = 0;
+        }
+        countSync += Time.deltaTime;
         prevRock  = UIHandler.rockCount;
         prevWood  = UIHandler.woodCount;
         prevGrass = UIHandler.grassCount;
