@@ -53,6 +53,7 @@ public class WebSpawner : MonoBehaviour {
                 Debug.Log(resObj.objType + " " + resObj.position);
 
                 Vector3 pos = new Vector3(map((float)resObj.position, 0, 100f, -6f, 6f), 7, -5);
+                print(pos);
                 Quaternion rot;
                 GameObject objTemp;
 
@@ -63,6 +64,7 @@ public class WebSpawner : MonoBehaviour {
                         rot = Quaternion.Euler(-90, 0, 0);
                         objTemp = Instantiate(rock, pos, rot) as GameObject;
                         objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                        print(pos);
                         break;
                     // grass
                     case 2:
@@ -84,7 +86,7 @@ public class WebSpawner : MonoBehaviour {
             // local object spawner if web is insufficient
             if (timeSinceLastObj > 1f / minObjRate)
             {
-                w.getResources().Add(new ResourceObject(Random.Range(1, 3), Random.Range(0, 100)));
+                w.getResources().Add(new ResourceObject(Random.Range(1, 4), Random.Range(0, 100)));
 
                 timeSinceLastObj = 0;
             }
