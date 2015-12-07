@@ -13,6 +13,9 @@ public class WebSpawner : MonoBehaviour {
     List<ResourceObject> resources;
     float prevPos;
     int prevScore;
+    float prevGrass;
+    float prevRock;
+    float prevWood;
 
     public GameObject rock;  // index 1
     public GameObject grass; // index 2
@@ -25,6 +28,9 @@ public class WebSpawner : MonoBehaviour {
         resources = new List<ResourceObject>();
         prevPos = transform.position.x;
         prevScore = Mathf.RoundToInt(transform.position.y);
+        prevGrass = UIHandler.grassCount;
+        prevWood = UIHandler.woodCount;
+        prevRock = UIHandler.rockCount;
 
         ws = new WebSocket("ws://dvm.io:8081/socket.io/?EIO=3&transport=websocket");
         ws.OnError += (sender, e) => Debug.Log("ERROR: " + e.Message);
@@ -122,6 +128,23 @@ public class WebSpawner : MonoBehaviour {
             ws.SendAsync("42[\"score\"," + Mathf.RoundToInt(transform.position.y) + "]", null);
         }
         prevScore = Mathf.RoundToInt(transform.position.y);
+
+        // inventory tracker
+        if(prevRock != UIHandler.rockCount)
+        {
+            ws.SendAsync("42[\"invR\"," + UIHandler.rockCount + "]", null);
+        }
+        if (prevWood != UIHandler.woodCount)
+        {
+            ws.SendAsync("42[\"invW\"," + UIHandler.woodCount + "]", null);
+        }
+        if (prevGrass != UIHandler.grassCount)
+        {
+            ws.SendAsync("42[\"invG\"," + UIHandler.grassCount + "]", null);
+        }
+        prevRock  = UIHandler.rockCount;
+        prevWood  = UIHandler.woodCount;
+        prevGrass = UIHandler.grassCount;
 
 	}
 
