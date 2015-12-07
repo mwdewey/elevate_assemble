@@ -113,7 +113,7 @@ public class WebSpawner : MonoBehaviour {
         // local object spawner if web is insufficient
         if (timeSinceLastObj > 1f / minObjRate)
         {
-            resources.Add(new ResourceObject(Random.Range(1, 3), Random.Range(0, 100)));
+            resources.Add(new ResourceObject(Random.Range(1, 4), Random.Range(0, 100)));
 
             timeSinceLastObj = 0;
         }
