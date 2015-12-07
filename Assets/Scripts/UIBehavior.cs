@@ -8,6 +8,7 @@ public class UIBehavior : MonoBehaviour {
     public float grassCount = 0;
     float GOtime = 0;
     string level;
+    int highestHeight;
 
     public Sprite grassImage;
     public Sprite stoneImage;
@@ -16,24 +17,27 @@ public class UIBehavior : MonoBehaviour {
     public Text woodDisplay;
     public Text rockDisplay;
     public Text grassDisplay;
+    public Text score;
     public Text gameOverDisplay;
     public Image resource;
     int select = 0;
 
 	// Use this for initialization
 	void Start () {
-        //woodCount = 0;
-        //rockCount = 0;
-        //grassCount = 0;
+        woodCount = 0;
+        rockCount = 0;
+        grassCount = 0;
+        highestHeight = 0;
         level = Application.loadedLevelName;
 
     }
 	
 	// Update is called once per frame
 	void Update () {
-        woodDisplay.text = "" + woodCount;
-        rockDisplay.text = "" + rockCount;
-        grassDisplay.text = grassCount.ToString();
+        if (highestHeight < GameObject.FindGameObjectWithTag("Player").transform.position.y)
+        {
+            highestHeight = (int)(GameObject.FindGameObjectWithTag("Player").transform.position.y);
+        }
         if (GameObject.FindGameObjectWithTag("Player") == false)
         {
             gameOverDisplay.text = "Game Over";
@@ -47,6 +51,12 @@ public class UIBehavior : MonoBehaviour {
         {
             ResourceSelect();
         }
+
+        //Display Area
+        woodDisplay.text = woodCount.ToString();
+        rockDisplay.text = rockCount.ToString();
+        grassDisplay.text = grassCount.ToString();
+        score.text = "Score: " + highestHeight.ToString();
 
     }
     void ResourceSelect()

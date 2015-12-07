@@ -1,0 +1,177 @@
+fileFormatVersion: 2
+guid: 3e157fcd442b4f74eba0f86329c01940
+timeCreated: 1449447539
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: backup
+    100002: ear_left1
+    100004: ear_right1
+    100006: earring_left1
+    100008: earring_right1
+    100010: eye_left1
+    100012: eye_right1
+    100014: eyebrow_left2
+    100016: eyebrow_left3
+    100018: head3
+    100020: head6
+    100022: mouth1
+    100024: neck1
+    100026: necklace1
+    100028: necklace3
+    100030: nose1
+    100032: pCube10
+    100034: pCube11
+    100036: pCube13
+    100038: //RootNode
+    100040: premerge
+    100042: torso3
+    100044: torso4
+    400000: backup
+    400002: ear_left1
+    400004: ear_right1
+    400006: earring_left1
+    400008: earring_right1
+    400010: eye_left1
+    400012: eye_right1
+    400014: eyebrow_left2
+    400016: eyebrow_left3
+    400018: head3
+    400020: head6
+    400022: mouth1
+    400024: neck1
+    400026: necklace1
+    400028: necklace3
+    400030: nose1
+    400032: pCube10
+    400034: pCube11
+    400036: pCube13
+    400038: //RootNode
+    400040: premerge
+    400042: torso3
+    400044: torso4
+    2300000: ear_left1
+    2300002: ear_right1
+    2300004: earring_left1
+    2300006: earring_right1
+    2300008: eye_left1
+    2300010: eye_right1
+    2300012: eyebrow_left2
+    2300014: eyebrow_left3
+    2300016: head3
+    2300018: head6
+    2300020: mouth1
+    2300022: neck1
+    2300024: necklace1
+    2300026: necklace3
+    2300028: nose1
+    2300030: pCube10
+    2300032: pCube11
+    2300034: pCube13
+    2300036: torso3
+    2300038: torso4
+    3300000: ear_left1
+    3300002: ear_right1
+    3300004: earring_left1
+    3300006: earring_right1
+    3300008: eye_left1
+    3300010: eye_right1
+    3300012: eyebrow_left2
+    3300014: eyebrow_left3
+    3300016: head3
+    3300018: head6
+    3300020: mouth1
+    3300022: neck1
+    3300024: necklace1
+    3300026: necklace3
+    3300028: nose1
+    3300030: pCube10
+    3300032: pCube11
+    3300034: pCube13
+    3300036: torso3
+    3300038: torso4
+    4300000: pCube10
+    4300002: torso3
+    4300004: pCube11
+    4300006: pCube13
+    4300008: necklace1
+    4300010: head3
+    4300012: eyebrow_left2
+    4300014: necklace3
+    4300016: eyebrow_left3
+    4300018: mouth1
+    4300020: eye_right1
+    4300022: eye_left1
+    4300024: torso4
+    4300026: neck1
+    4300028: earring_right1
+    4300030: earring_left1
+    4300032: ear_right1
+    4300034: ear_left1
+    4300036: nose1
+    4300038: head6
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
