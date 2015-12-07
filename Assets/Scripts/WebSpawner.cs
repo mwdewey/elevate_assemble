@@ -88,18 +88,21 @@ public class WebSpawner : MonoBehaviour {
                     rot = Quaternion.Euler(-90, 0, 0);
                     objTemp = Instantiate(rock, pos, rot) as GameObject;
                     objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                    Physics.IgnoreCollision((objTemp.GetComponent<BoxCollider>()), GetComponent<CharacterController>());
                     break;
                 // grass
                 case 2:
                     rot = Quaternion.Euler(-90, 0, 0);
                     objTemp = Instantiate(grass, pos, rot) as GameObject;
                     objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                    Physics.IgnoreCollision((objTemp.GetComponent<BoxCollider>()), GetComponent<CharacterController>());
                     break;
                 // wood
                 case 3:
                     rot = Quaternion.Euler(0, 0, 0);
                     objTemp = Instantiate(wood, pos, rot) as GameObject;
                     objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+                    Physics.IgnoreCollision((objTemp.GetComponent<BoxCollider>()), GetComponent<CharacterController>());
                     break;
                 default: 
                     break;

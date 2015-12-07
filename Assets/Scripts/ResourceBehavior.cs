@@ -20,10 +20,10 @@ public class ResourceBehavior : MonoBehaviour {
 
     }
 
-    void OnTriggerEnter(Collider col)
+    void OnTriggerEnter(Collider other)
     {
 
-        if (col.gameObject.GetComponent<PlayerMovement>() == true)
+        if (other.gameObject.GetComponent<PlayerMovement>() == true)
         {
             if(resourceType == "grass")
             {
@@ -38,4 +38,7 @@ public class ResourceBehavior : MonoBehaviour {
             Destroy(gameObject);
         }
     }
+
+
+
 }

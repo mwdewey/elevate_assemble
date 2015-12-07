@@ -24,9 +24,9 @@ public class UIBehavior : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        woodCount = 0;
-        rockCount = 0;
-        grassCount = 0;
+        //woodCount = 0;
+        //rockCount = 0;
+        //grassCount = 0;
         highestHeight = 0;
         level = Application.loadedLevelName;
 
