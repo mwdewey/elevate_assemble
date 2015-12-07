@@ -119,7 +119,7 @@ public class WebSpawner : MonoBehaviour {
         // player tracker
         if (prevPos != transform.position.x)
         {
-            ws.SendAsync("42[\"pos\"," + (transform.position.x + 6) + "]",null);
+            ws.SendAsync("42[\"pos\"," + transform.position.x + "]",null);
         }
         prevPos = transform.position.x;
 
@@ -143,14 +143,14 @@ public class WebSpawner : MonoBehaviour {
         {
             ws.SendAsync("42[\"invG\"," + UIHandler.grassCount + "]", null);
         }
-        if (countSync > 1)
+        /*if (countSync > 1)  // add only if needed. Bad pratice
         {
             ws.SendAsync("42[\"invR\"," + UIHandler.rockCount + "]", null);
             ws.SendAsync("42[\"invW\"," + UIHandler.woodCount + "]", null);
             ws.SendAsync("42[\"invG\"," + UIHandler.grassCount + "]", null);
             countSync = 0;
         }
-        countSync += Time.deltaTime;
+        countSync += Time.deltaTime;*/
         prevRock  = UIHandler.rockCount;
         prevWood  = UIHandler.woodCount;
         prevGrass = UIHandler.grassCount;
