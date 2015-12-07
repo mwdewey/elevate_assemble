@@ -67,7 +67,7 @@ public class ObjectPlacement : MonoBehaviour
             // grass
             if (Input.GetKeyDown(KeyCode.Alpha2))
             {
-                if (UIHandler.grassCount > 0 && false)
+                if (UIHandler.grassCount > 0)
                 {
                     heldObject = (GameObject)Instantiate(grass, new Vector3(0, 0, 0), Quaternion.identity);
                     UIHandler.grassCount--;
