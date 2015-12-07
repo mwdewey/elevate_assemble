@@ -8,7 +8,7 @@ public class UIBehavior : MonoBehaviour {
     public float grassCount = 0;
     float GOtime = 0;
     string level;
-    int highestHeight;
+    public int highestHeight;
 
     public Sprite grassImage;
     public Sprite stoneImage;

@@ -12,7 +12,7 @@ public class WebSpawner : MonoBehaviour {
     WebSocket ws;
     List<ResourceObject> resources;
     float prevPos;
-    int prevScore;
+    float prevScore;
     float prevGrass;
     float prevRock;
     float prevWood;
@@ -28,7 +28,7 @@ public class WebSpawner : MonoBehaviour {
         timeSinceLastObj = 0;
         resources = new List<ResourceObject>();
         prevPos = transform.position.x;
-        prevScore = Mathf.RoundToInt(transform.position.y);
+        prevScore = UIHandler.highestHeight;
         prevGrass = UIHandler.grassCount;
         prevWood = UIHandler.woodCount;
         prevRock = UIHandler.rockCount;
@@ -117,32 +117,17 @@ public class WebSpawner : MonoBehaviour {
         timeSinceLastObj += Time.deltaTime;
 
         // player tracker
-        if (prevPos != transform.position.x)
-        {
-            ws.SendAsync("42[\"pos\"," + transform.position.x + "]",null);
-        }
+        if (prevPos != transform.position.x) ws.SendAsync("42[\"pos\"," + transform.position.x + "]", null);
         prevPos = transform.position.x;
 
         // score tracker
-        if (prevScore != Mathf.RoundToInt(transform.position.y))
-        {
-            ws.SendAsync("42[\"score\"," + Mathf.RoundToInt(transform.position.y) + "]", null);
-        }
-        prevScore = Mathf.RoundToInt(transform.position.y);
+        if (prevScore != UIHandler.highestHeight) ws.SendAsync("42[\"score\"," + UIHandler.highestHeight + "]", null);
+        prevScore = UIHandler.highestHeight;
 
         // inventory tracker
-        if(prevRock != UIHandler.rockCount)
-        {
-            ws.SendAsync("42[\"invR\"," + UIHandler.rockCount + "]", null);
-        }
-        if (prevWood != UIHandler.woodCount)
-        {
-            ws.SendAsync("42[\"invW\"," + UIHandler.woodCount + "]", null);
-        }
-        if (prevGrass != UIHandler.grassCount)
-        {
-            ws.SendAsync("42[\"invG\"," + UIHandler.grassCount + "]", null);
-        }
+        if (prevRock != UIHandler.rockCount)   ws.SendAsync("42[\"invR\"," + UIHandler.rockCount + "]", null);
+        if (prevWood != UIHandler.woodCount)   ws.SendAsync("42[\"invW\"," + UIHandler.woodCount + "]", null);
+        if (prevGrass != UIHandler.grassCount) ws.SendAsync("42[\"invG\"," + UIHandler.grassCount + "]", null);
         /*if (countSync > 1)  // add only if needed. Bad pratice
         {
             ws.SendAsync("42[\"invR\"," + UIHandler.rockCount + "]", null);
