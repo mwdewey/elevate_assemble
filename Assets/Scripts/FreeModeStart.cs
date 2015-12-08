@@ -43,5 +43,10 @@ public class FreeModeStart : MonoBehaviour {
         openSeq = true;
         levelLoad = "FreeModeLevelThree";
     }
+    public void openPuzzleMode()
+    {
+        openSeq = true;
+        levelLoad = "PuzzleStageOne";
+    }
 
 }
