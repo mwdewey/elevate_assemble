@@ -78,6 +78,13 @@ public class PlayerMovement : MonoBehaviour {
     }
     void UpdatePlayer() {
         //JUMPING AND GRAVITY
+
+        //Gravity.
+        if (!controller.isGrounded) {
+            velocity.y -= gravity * Time.deltaTime;
+        } else {
+            velocity.y = 0;
+        }
         if (Input.GetKeyDown(KeyCode.Space)) {
             //Could potentially add Double or Wall jump. We'll see how far we get.
             if (controller.isGrounded) {
@@ -91,12 +98,9 @@ public class PlayerMovement : MonoBehaviour {
             audio_source.PlayOneShot(land_jump_sound, vol);
         }
         isGroundedPrev = controller.isGrounded;
-        
 
-        //Gravity.
-        if (!controller.isGrounded) {
-            velocity.y -= gravity * Time.deltaTime;
-        }
+        Debug.Log(velocity.x);
+
 
         //HORIZONTAL MOVEMENT
         if (Input.GetKey(KeyCode.RightArrow)) {
@@ -127,6 +131,12 @@ public class PlayerMovement : MonoBehaviour {
     Vector3 groundedJump(Vector3 inVec) {
         inVec.y = jumpSpeed;
         return inVec;
+    }
+    void OnControllerColliderHit(ControllerColliderHit hit) {
+        if((controller.collisionFlags & CollisionFlags.Below) != 0){
+            Debug.Log("Surface : " + hit.gameObject.name);
+        }
+        
     }
 
 }
