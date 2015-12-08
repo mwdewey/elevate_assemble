@@ -133,7 +133,9 @@ public class WebSpawner : MonoBehaviour {
         timeSinceLastObj += Time.deltaTime;
 
         // player tracker
-        if (prevPos != transform.position.x) ws.SendAsync("42[\"pos\"," + transform.position.x + "]", null);
+        float mappedX = map(transform.position.x,GetComponent<screenWrapping>().leftBound,
+            GetComponent<screenWrapping>().rightBound,0,100);
+        if (prevPos != transform.position.x) ws.SendAsync("42[\"pos\"," + mappedX + "]", null);
         prevPos = transform.position.x;
 
         // score tracker
