@@ -25,7 +25,9 @@ public class PlayerMovement : MonoBehaviour {
 
     public float moveSpeed;
     // I'm using a jump height field because it's more sensible to tweak than a jump speed field.
+    //public float JUMP_HEIGHT_INITIAL;
     public float jumpHeight;
+    
     // This is how long it takes our character to reach the apex of his/her jump.
     public float timeToApex;
     public float gravity;
@@ -35,7 +37,10 @@ public class PlayerMovement : MonoBehaviour {
     // This will be calculated on init.
     [HideInInspector]
     public float jumpSpeed;
-
+    //We'll be modifying our jumpspeed based on the platform we're on. Let's save the original jump speed for now.
+    private float orig_jumpSpeed;
+    //Keep us locked in one z plane.
+    private float z_plane;
     //Camera stuff
     public float camera_offset_y = 0.5f;
     public float camera_offset_x = 0.0f;
@@ -51,24 +56,14 @@ public class PlayerMovement : MonoBehaviour {
         isFacingLeft = false;
         prevFacing = false;
         isGroundedPrev = true;
-        /*
-            Holy 8th grade physics, batman! Using the standard motion equation:
-            
-            v_f^2 = v_i^2 +2ad
 
-            d = jumpheight, v_f^2 = 0 (At the apex), a = -g
-
-            solve for v_i
-
-            v_i = sqrt(-2ad)
-                        
-        */
         
-        jumpSpeed = Mathf.Sqrt(-2 * -gravity * jumpHeight);
-
+        jumpSpeed = jumpHeightToJumpSpeed(jumpHeight);
+        orig_jumpSpeed = jumpSpeed;
         controller = GetComponent<CharacterController>();
 
         audio_source = GetComponent<AudioSource>();
+        z_plane = transform.position.z;
 	}
 	
 	// Update is called once per frame
@@ -77,20 +72,17 @@ public class PlayerMovement : MonoBehaviour {
         UpdateCamera();
     }
     void UpdatePlayer() {
+        //The z of the player should never change.
+        transform.position = new Vector3(transform.position.x, transform.position.y, z_plane);
         //JUMPING AND GRAVITY
 
         //Gravity.
         if (!controller.isGrounded) {
             velocity.y -= gravity * Time.deltaTime;
         } else {
-            velocity.y = 0;
+            velocity.y = -gravity * Time.deltaTime;
         }
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            //Could potentially add Double or Wall jump. We'll see how far we get.
-            if (controller.isGrounded) {
-                velocity = groundedJump(velocity);
-            }
-        }
+
 
         // when character lands, play landing sound
         if (isGroundedPrev != controller.isGrounded && controller.isGrounded) {
@@ -98,10 +90,16 @@ public class PlayerMovement : MonoBehaviour {
             audio_source.PlayOneShot(land_jump_sound, vol);
         }
         isGroundedPrev = controller.isGrounded;
-
-        Debug.Log(velocity.x);
-
-
+        // If we bonk our head on the ceiling then set the y velocity to 0.
+        if ((controller.collisionFlags & CollisionFlags.Above) != 0) {
+            velocity.y = 0;
+        } 
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            //Could potentially add Double or Wall jump. We'll see how far we get.
+            if (controller.isGrounded) {
+                velocity = groundedJump(velocity);
+            }
+        }
         //HORIZONTAL MOVEMENT
         if (Input.GetKey(KeyCode.RightArrow)) {
             isFacingLeft = false;
@@ -134,9 +132,36 @@ public class PlayerMovement : MonoBehaviour {
     }
     void OnControllerColliderHit(ControllerColliderHit hit) {
         if((controller.collisionFlags & CollisionFlags.Below) != 0){
-            Debug.Log("Surface : " + hit.gameObject.name);
+            //Go get the platform attributes.
+            PlatformAttributes plat = hit.gameObject.GetComponent<PlatformAttributes>();
+            
+            jumpSpeed = orig_jumpSpeed;
+            // If getcomponent does not return null, and some of its fields are not 0, it means we're on a platform with a different behavior.
+            if (plat != null) {
+                if (plat.jump_height != 0) {
+                    jumpSpeed = jumpHeightToJumpSpeed(plat.jump_height);
+                }
+            } 
+        } else {
+            Debug.Log("You can't jump now!");
         }
         
     }
+    
+    float jumpHeightToJumpSpeed(float inHeight) {
+        /*
+            Holy 8th grade physics, batman! Using the standard motion equation:
 
+            v_f^2 = v_i^2 +2ad
+
+            d = jumpheight, v_f^2 = 0 (At the apex), a = -g
+
+            solve for v_i
+
+            v_i = sqrt(-2ad)
+
+        */
+        float speed = Mathf.Sqrt(-2 * -gravity * inHeight);
+        return speed;
+    }
 }

@@ -93,7 +93,7 @@ public class ObjectPlacement : MonoBehaviour
             heldObject.transform.parent = this.transform;
             heldObject.transform.localPosition = new Vector3(placement_X, placement_Y, 0);
             heldObject.GetComponent<Rigidbody>().isKinematic = true;
-
+            //While we're still deciding where to place our platform, it shouldn't collide with anything.
             hasCube = true;
         }
 
@@ -103,7 +103,6 @@ public class ObjectPlacement : MonoBehaviour
             heldObject.transform.parent = null;
             heldObject.GetComponent<Rigidbody>().isKinematic = false;
             heldObject.GetComponent<sticky>().checkSticky = true;
-
             hasCube = false;
         }
     }
