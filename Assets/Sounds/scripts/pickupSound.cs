@@ -18,10 +18,10 @@ public class pickupSound : MonoBehaviour {
     {
         if (col.gameObject.GetComponent<ResourceBehavior>() == true)
         {
-            //float vol = Random.Range(0, 5f);
-            //source.pitch = Random.Range(0.75f, 1.25f);
-            float vol = 1f;
-            source.pitch = 1f;
+            float vol = Random.Range(0, 5f);
+            source.pitch = Random.Range(0.75f, 1.25f);
+            //float vol = 1f;
+            //source.pitch = 1f;
 
             source.PlayOneShot(clip, vol);
             currentPlays++;
