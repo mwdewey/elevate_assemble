@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class LevelGoalScript : MonoBehaviour {
-    public int index;
+    public string nextLevel;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +18,8 @@ public class LevelGoalScript : MonoBehaviour {
     {
         if(col.GetComponent("PlayerMovement") == true)
         {
-            Application.LoadLevel(index);
+            Application.LoadLevel(nextLevel);
+            print("LevelHit");
         }
     }
 }
