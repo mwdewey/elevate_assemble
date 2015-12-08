@@ -25,7 +25,7 @@ public class PlayeronRock : MonoBehaviour {
         
         if (col.GetComponent("PlayerMovement"))
         {
-            
+            print("Player");
             col.GetComponent<PlayerMovement>().jumpSpeed = newJump;
 
         }

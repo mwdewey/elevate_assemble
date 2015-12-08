@@ -11,11 +11,13 @@ public class sticky : MonoBehaviour {
     public bool checkSticky = false;
     public bool isColliding = false;
     Vector3 prevPosition;
+    bool isFrozen;
 
 	// Use this for initialization
 	void Start () {
         startTime = -1;
         prevPosition = transform.position;
+        isFrozen = false;
 	}
 	
 	// Update is called once per frame
@@ -34,19 +36,21 @@ public class sticky : MonoBehaviour {
             else if ((Time.realtimeSinceStartup - startTime) >= timeLimit)
             {
                 Rigidbody rb = this.GetComponent<Rigidbody>();
-                rb.constraints = RigidbodyConstraints.FreezeAll;
-                this.GetComponent<MeshRenderer>().material = this.GetComponent<Materials>().frozen;
+                //rb.constraints = RigidbodyConstraints.FreezeAll;
+                Destroy(rb);
+                //this.GetComponent<MeshRenderer>().material = this.GetComponent<Materials>().frozen;
+                isFrozen = true;
             }
         }
 
     }
 
-    void OnCollisionStay(Collision collisionInfo)
+    void OnTriggerStay(Collider c)
     {
-        isColliding = true;
+        if (c.gameObject.GetComponent<sticky>() == true) isColliding = true;
     }
 
-    void OnCollisionExit(Collision c)
+    void OnTriggerExit(Collider c)
     {
         isColliding = false;
     }

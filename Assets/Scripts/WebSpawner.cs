@@ -17,6 +17,7 @@ public class WebSpawner : MonoBehaviour {
     float prevRock;
     float prevWood;
     float countSync;
+    List<GameObject> spawnedResources;
 
     public GameObject rock;  // index 1
     public GameObject grass; // index 2
@@ -32,6 +33,7 @@ public class WebSpawner : MonoBehaviour {
         prevGrass = UIHandler.grassCount;
         prevWood = UIHandler.woodCount;
         prevRock = UIHandler.rockCount;
+        spawnedResources = new List<GameObject>();
 
         ws = new WebSocket("ws://dvm.io:8081/socket.io/?EIO=3&transport=websocket");
         ws.OnError += (sender, e) => Debug.Log("ERROR: " + e.Message);
@@ -79,7 +81,7 @@ public class WebSpawner : MonoBehaviour {
 
             Vector3 pos = new Vector3(map((float)resObj.position, 0, 100f, -6f, 6f),transform.position.y + 7, -5);
             Quaternion rot;
-            GameObject objTemp;
+            GameObject objTemp = null;
 
             switch (resObj.objType)
             {
@@ -87,26 +89,29 @@ public class WebSpawner : MonoBehaviour {
                 case 1:
                     rot = Quaternion.Euler(-90, 0, 0);
                     objTemp = Instantiate(rock, pos, rot) as GameObject;
-                    objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
-                    Physics.IgnoreCollision((objTemp.GetComponent<BoxCollider>()), GetComponent<CharacterController>());
                     break;
                 // grass
                 case 2:
                     rot = Quaternion.Euler(-90, 0, 0);
                     objTemp = Instantiate(grass, pos, rot) as GameObject;
-                    objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
-                    Physics.IgnoreCollision((objTemp.GetComponent<BoxCollider>()), GetComponent<CharacterController>());
                     break;
                 // wood
                 case 3:
                     rot = Quaternion.Euler(0, 0, 0);
                     objTemp = Instantiate(wood, pos, rot) as GameObject;
-                    objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
-                    Physics.IgnoreCollision((objTemp.GetComponent<BoxCollider>()), GetComponent<CharacterController>());
                     break;
                 default: 
                     break;
             }
+            objTemp.GetComponent<ResourceBehavior>().UIhandler = this.UIHandler;
+            Physics.IgnoreCollision((objTemp.GetComponent<BoxCollider>()), GetComponent<CharacterController>());
+            foreach (GameObject gm in spawnedResources)
+            {
+                if (gm != null) Physics.IgnoreCollision(gm.GetComponent<BoxCollider>(), objTemp.GetComponent<BoxCollider>());
+            }
+            spawnedResources.Add(objTemp);
+
+
         }
         resources.Clear();
 

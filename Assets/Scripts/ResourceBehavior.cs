@@ -15,8 +15,6 @@ public class ResourceBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //translation = Time.deltaTime * fallRate;
-        //transform.Translate(0, -translation, 0);
 
     }
 
@@ -35,6 +33,9 @@ public class ResourceBehavior : MonoBehaviour {
             {
                UIhandler.woodCount += 1;
             }
+
+
+
             Destroy(gameObject);
         }
     }
