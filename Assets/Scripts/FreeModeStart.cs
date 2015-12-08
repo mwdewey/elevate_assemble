@@ -2,11 +2,12 @@
 using System.Collections;
 using UnityEngine.UI;
 
-public class GameStart : MonoBehaviour {
+public class FreeModeStart : MonoBehaviour {
     float riseRate = 1;
     float translation = 0;
     float time = 0;
     bool openSeq = false;
+    string levelLoad;
 
     // Use this for initialization
     void Start () {
@@ -22,14 +23,25 @@ public class GameStart : MonoBehaviour {
             time++;
             if (time >= 180)
             {
-                Application.LoadLevel("SpawnerTestScene");
+                Application.LoadLevel(levelLoad);
             }
         }
 
     }
-   public void Opening()
+    public void openEasy()
     {
         openSeq = true;
+        levelLoad = "FreeModeLevelOne";
     }
- 
+    public void openNormal()
+    {
+        openSeq = true;
+        levelLoad = "FreeModeLevelTwo";
+    }
+    public void openHard()
+    {
+        openSeq = true;
+        levelLoad = "FreeModeLevelThree";
+    }
+
 }

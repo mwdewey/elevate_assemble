@@ -34,23 +34,26 @@ public class UIBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (highestHeight < GameObject.FindGameObjectWithTag("Player").transform.position.y)
+        if (GameObject.FindGameObjectWithTag("Player"))
         {
-            highestHeight = (int)(GameObject.FindGameObjectWithTag("Player").transform.position.y);
+            if (highestHeight < GameObject.FindGameObjectWithTag("Player").transform.position.y)
+            {
+                highestHeight = (int)(GameObject.FindGameObjectWithTag("Player").transform.position.y);
+            }
         }
-        if (GameObject.FindGameObjectWithTag("Player") == false)
-        {
-            gameOverDisplay.text = "Game Over";
-            GOtime++;
-        }
-        if(GOtime >= 120)
-        {
-            Application.LoadLevel(level);
-        }
-        if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
-        {
-            ResourceSelect();
-        }
+            if (GameObject.FindGameObjectWithTag("Player") == false)
+            {
+                gameOverDisplay.text = "Game Over   Score: " + highestHeight;
+                GOtime++;
+            }
+            if (GOtime >= 300)
+            {
+                Application.LoadLevel(level);
+            }
+            if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            {
+                ResourceSelect();
+            }
 
         //Display Area
         woodDisplay.text = woodCount.ToString();
