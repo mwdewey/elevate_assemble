@@ -33,6 +33,9 @@ public class ResourceBehavior : MonoBehaviour {
             {
                UIhandler.woodCount += 1;
             }
+
+
+
             Destroy(gameObject);
         }
     }
