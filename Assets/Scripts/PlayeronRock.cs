@@ -22,9 +22,10 @@ public class PlayeronRock : MonoBehaviour {
     }
     void OnTriggerEnter(Collider col)
     {
-
+        
         if (col.GetComponent("PlayerMovement"))
         {
+            
             col.GetComponent<PlayerMovement>().jumpSpeed = newJump;
 
         }

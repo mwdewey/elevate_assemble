@@ -71,6 +71,7 @@ ModelImporter:
     2300034: pCube13
     2300036: torso3
     2300038: torso4
+    2300040: //RootNode
     3300000: ear_left1
     3300002: ear_right1
     3300004: earring_left1
@@ -91,6 +92,7 @@ ModelImporter:
     3300034: pCube13
     3300036: torso3
     3300038: torso4
+    3300040: //RootNode
     4300000: pCube10
     4300002: torso3
     4300004: pCube11
