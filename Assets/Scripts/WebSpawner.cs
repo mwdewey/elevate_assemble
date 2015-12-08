@@ -57,8 +57,16 @@ public class WebSpawner : MonoBehaviour {
                     int position = objJson["pos"].AsInt;
                     resources.Add(new ResourceObject(objType, position));
                     break;
-                // from unity, so this would be other unity clients
+                // from unity, so this would be other unity clients.  May handle in future
                 case "pos" :
+                    break;
+                case "score":
+                    break;
+                case "invW":
+                    break;
+                case "invR":
+                    break;
+                case "invG":
                     break;
                 default :
                     break;
@@ -136,14 +144,14 @@ public class WebSpawner : MonoBehaviour {
         if (prevRock != UIHandler.rockCount)   ws.SendAsync("42[\"invR\"," + UIHandler.rockCount + "]", null);
         if (prevWood != UIHandler.woodCount)   ws.SendAsync("42[\"invW\"," + UIHandler.woodCount + "]", null);
         if (prevGrass != UIHandler.grassCount) ws.SendAsync("42[\"invG\"," + UIHandler.grassCount + "]", null);
-        /*if (countSync > 1)  // add only if needed. Bad pratice
+        if (countSync > 1)
         {
             ws.SendAsync("42[\"invR\"," + UIHandler.rockCount + "]", null);
             ws.SendAsync("42[\"invW\"," + UIHandler.woodCount + "]", null);
             ws.SendAsync("42[\"invG\"," + UIHandler.grassCount + "]", null);
             countSync = 0;
         }
-        countSync += Time.deltaTime;*/
+        countSync += Time.deltaTime;
         prevRock  = UIHandler.rockCount;
         prevWood  = UIHandler.woodCount;
         prevGrass = UIHandler.grassCount;
