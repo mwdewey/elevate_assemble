@@ -15,8 +15,6 @@ public class ResourceBehavior : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        //translation = Time.deltaTime * fallRate;
-        //transform.Translate(0, -translation, 0);
 
     }
 

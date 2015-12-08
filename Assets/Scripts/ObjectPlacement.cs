@@ -92,7 +92,6 @@ public class ObjectPlacement : MonoBehaviour
 
             heldObject.transform.parent = this.transform;
             heldObject.transform.localPosition = new Vector3(placement_X, placement_Y, 0);
-            heldObject.GetComponent<Rigidbody>().isKinematic = true;
 
             hasCube = true;
         }
@@ -101,7 +100,7 @@ public class ObjectPlacement : MonoBehaviour
         else if (!heldObject.GetComponent<sticky>().isColliding)
         {
             heldObject.transform.parent = null;
-            heldObject.GetComponent<Rigidbody>().isKinematic = false;
+            heldObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
             heldObject.GetComponent<sticky>().checkSticky = true;
 
             hasCube = false;
