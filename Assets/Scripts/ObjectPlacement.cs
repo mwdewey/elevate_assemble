@@ -1,5 +1,5 @@
 ﻿using UnityEngine;
-using System.Collections;
+using System.Collections.Generic;
 
 public class ObjectPlacement : MonoBehaviour
 {
@@ -9,10 +9,12 @@ public class ObjectPlacement : MonoBehaviour
     bool prevFacing;
     bool hasCube;
     AudioSource audio_source;
+    List<Material> orgMaterials;
 
     public GameObject rock;
     public GameObject grass;
     public GameObject wood;
+    public Material invalid_material;
     public UIBehavior UIHandler;
     public AudioClip placement_clip;
 
@@ -27,6 +29,8 @@ public class ObjectPlacement : MonoBehaviour
         hasCube = false;
         heldObject = null;
         audio_source = GetComponent<AudioSource>();
+
+        orgMaterials = new List<Material>();
     }
 
     // Update is called once per frame
@@ -39,8 +43,19 @@ public class ObjectPlacement : MonoBehaviour
 
         if (heldObject != null)
         {
-            if (heldObject.GetComponent<sticky>().isColliding && hasCube) heldObject.GetComponent<MeshRenderer>().material = heldObject.GetComponent<Materials>().invalid;
-            else heldObject.GetComponent<MeshRenderer>().material = heldObject.GetComponent<Materials>().normal;
+            Material[] tempMats = heldObject.GetComponent<MeshRenderer>().materials;
+            for(int i = 0; i < tempMats.Length; i++)
+            {
+                if (heldObject.GetComponent<sticky>().isColliding && hasCube)
+                {
+                    Debug.Log("BLERFDSDFSFDG");
+                    tempMats[i] = invalid_material;
+                }
+
+                else tempMats[i] = orgMaterials[i];
+            }
+            heldObject.GetComponent<MeshRenderer>().materials = tempMats;
+
         }
 
 
@@ -93,6 +108,10 @@ public class ObjectPlacement : MonoBehaviour
             heldObject.transform.parent = this.transform;
             heldObject.transform.localPosition = new Vector3(placement_X, placement_Y, 0);
 
+            // save org materials
+            orgMaterials.Clear();
+            foreach (Material m in heldObject.GetComponent<MeshRenderer>().materials) orgMaterials.Add(m);
+
             hasCube = true;
         }
 
@@ -102,6 +121,7 @@ public class ObjectPlacement : MonoBehaviour
             heldObject.transform.parent = null;
             heldObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
             heldObject.GetComponent<sticky>().checkSticky = true;
+            heldObject.GetComponent<MeshCollider>().isTrigger = false;
 
             hasCube = false;
         }

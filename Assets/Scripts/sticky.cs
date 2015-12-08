@@ -38,7 +38,7 @@ public class sticky : MonoBehaviour {
                 Rigidbody rb = this.GetComponent<Rigidbody>();
                 //rb.constraints = RigidbodyConstraints.FreezeAll;
                 Destroy(rb);
-                this.GetComponent<MeshRenderer>().material = this.GetComponent<Materials>().frozen;
+                //this.GetComponent<MeshRenderer>().material = this.GetComponent<Materials>().frozen;
                 isFrozen = true;
             }
         }
@@ -47,32 +47,10 @@ public class sticky : MonoBehaviour {
 
     void OnTriggerStay(Collider c)
     {
-        isColliding = true;
+        if (c.gameObject.GetComponent<sticky>() == true) isColliding = true;
     }
 
     void OnTriggerExit(Collider c)
-    {
-        isColliding = false;
-    }
-
-    void OnCollisionStay(Collision collisionInfo)
-    {
-        isColliding = true;
-
-        if (isFrozen)
-        {
-            // if this object is frozen and it's colliding with another frozen object, delete the other frozen object
-            if (collisionInfo.gameObject.GetComponent<PlayerMovement>() == true)
-            {
-                Debug.Log("DESTROY");
-                Destroy(this);
-            }
-
-
-        }
-    }
-
-    void OnCollisionExit(Collision c)
     {
         isColliding = false;
     }
