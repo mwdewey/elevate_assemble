@@ -146,7 +146,9 @@ public class ObjectPlacement : MonoBehaviour
     void switchStructure()
     {
         isPlatform = !isPlatform;
-        
+
+        UIHandler.switchStructIcons(isPlatform);
+
         if (hasCube)
         {
             string structType = heldObject.GetComponent<sticky>().structType;

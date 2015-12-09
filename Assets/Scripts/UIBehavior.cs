@@ -52,7 +52,7 @@ public class UIBehavior : MonoBehaviour {
             }
             if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
             {
-                ResourceSelect();
+                
             }
         if (Input.GetKeyDown(KeyCode.Escape))
         {
@@ -66,22 +66,36 @@ public class UIBehavior : MonoBehaviour {
         score.text = "Score: " + highestHeight.ToString();
 
     }
-    void ResourceSelect()
+
+    public void switchStructIcons(bool isPlatform)
     {
-        select++;
-        switch (select)
-        {
-            case 0:
-                resource.sprite = grassImage;
-                break;
-            case 1:
-                resource.sprite = stoneImage;
-                break;
-            case 2:
-                resource.sprite = woodImage;
-                select = -1;
-                break;
-        }
-            
+        float platPos = 50;
+        float columnPos = 50;
+
+        RectTransform wp;
+        RectTransform rp;
+        RectTransform gp;
+        RectTransform wc;
+        RectTransform rc;
+        RectTransform gc;
+
+        if (isPlatform) columnPos *= -1;
+        else platPos *= -1;
+
+        wp = transform.Find("woodPlatform").GetComponent<RectTransform>();
+        rp = transform.Find("rockPlatform").GetComponent<RectTransform>();
+        gp = transform.Find("grassPlatform").GetComponent<RectTransform>();
+        wc = transform.Find("woodStruct").GetComponent<RectTransform>();
+        rc = transform.Find("rockStruct").GetComponent<RectTransform>();
+        gc = transform.Find("grassStruct").GetComponent<RectTransform>();
+
+        wp.position = new Vector3(wp.position.x, platPos,0);
+        rp.position = new Vector3(rp.position.x, platPos, 0);
+        gp.position = new Vector3(gp.position.x, platPos, 0);
+        wc.position = new Vector3(wc.position.x, columnPos, 0);
+        rc.position = new Vector3(rc.position.x, columnPos, 0);
+        gc.position = new Vector3(gc.position.x, columnPos, 0);
+
     }
+
 }
