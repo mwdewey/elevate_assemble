@@ -94,12 +94,12 @@ public class PlayerMovement : MonoBehaviour {
         transform.position = new Vector3(transform.position.x, transform.position.y, z_plane);
         // If we bonk our head on the ceiling then set the y velocity to 0.
         if ((controller.collisionFlags & CollisionFlags.Above) != 0) {
-            //controller.stepOffset = 0;
+            controller.stepOffset = 0;
             velocity.y = -gravity * Time.deltaTime;
             velocity.x = 0;
             controller.Move(velocity * Time.deltaTime);
         } else {
-            //controller.stepOffset = orig_stepOffset;
+            controller.stepOffset = orig_stepOffset;
         }
         //JUMPING AND GRAVITY
         //Gravity.
