@@ -1,0 +1,135 @@
+fileFormatVersion: 2
+guid: 9dcb0a639e87c1d4a992b6c4099d6310
+timeCreated: 1449652010
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: handle_hand_left
+    100004: handle_hand_right
+    100006: handle_hips
+    100008: handle_master
+    100010: handle_shoulder_left
+    100012: handle_shoulder_right
+    100014: handle_wrist_left
+    100016: handle_wrist_right
+    100018: handles1
+    100020: ik_arm_left
+    100022: ik_arm_right
+    100024: ikLocators
+    100026: joi_elbow_left
+    100028: joi_elbow_right
+    100030: joi_hand_left
+    100032: joi_hand_right
+    100034: joi_head
+    100036: joi_hips
+    100038: joi_legs
+    100040: joi_neck
+    100042: joi_shoulder_left
+    100044: joi_shoulder_right
+    100046: joi_wrist_left
+    100048: joi_wrist_right
+    100050: joints
+    100052: loc_elbow_left
+    100054: loc_elbow_right
+    100056: mesh
+    100058: player
+    400000: //RootNode
+    400002: handle_hand_left
+    400004: handle_hand_right
+    400006: handle_hips
+    400008: handle_master
+    400010: handle_shoulder_left
+    400012: handle_shoulder_right
+    400014: handle_wrist_left
+    400016: handle_wrist_right
+    400018: handles1
+    400020: ik_arm_left
+    400022: ik_arm_right
+    400024: ikLocators
+    400026: joi_elbow_left
+    400028: joi_elbow_right
+    400030: joi_hand_left
+    400032: joi_hand_right
+    400034: joi_head
+    400036: joi_hips
+    400038: joi_legs
+    400040: joi_neck
+    400042: joi_shoulder_left
+    400044: joi_shoulder_right
+    400046: joi_wrist_left
+    400048: joi_wrist_right
+    400050: joints
+    400052: loc_elbow_left
+    400054: loc_elbow_right
+    400056: mesh
+    400058: player
+    4300000: player
+    7400000: Take 001
+    9500000: //RootNode
+    13700000: player
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
