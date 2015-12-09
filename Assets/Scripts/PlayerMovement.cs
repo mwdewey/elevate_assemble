@@ -16,6 +16,7 @@ public class PlayerMovement : MonoBehaviour {
     CharacterController controller;
     AudioSource audio_source;
 
+    bool canJump;
 
 
 
@@ -56,7 +57,7 @@ public class PlayerMovement : MonoBehaviour {
         isFacingLeft = false;
         prevFacing = false;
         isGroundedPrev = true;
-
+        canJump = true;
         
         jumpSpeed = jumpHeightToJumpSpeed(jumpHeight);
         orig_jumpSpeed = jumpSpeed;
@@ -80,7 +81,6 @@ public class PlayerMovement : MonoBehaviour {
             Debug.Log("Are we grounded " + controller.isGrounded);
         }
         //JUMPING AND GRAVITY
-        Debug.Log(controller.attachedRigidbody);
         //Gravity.
         if (!controller.isGrounded) {
             Debug.Log("You're in the aaiiiiiir");
@@ -99,10 +99,10 @@ public class PlayerMovement : MonoBehaviour {
             audio_source.PlayOneShot(land_jump_sound, vol);
         }
         isGroundedPrev = controller.isGrounded;
-
+        
         if (Input.GetKeyDown(KeyCode.Space)) {
             //Could potentially add Double or Wall jump. We'll see how far we get.
-            if (controller.isGrounded) {
+            if (canJump) {
                 velocity = groundedJump(velocity);
             }
         }
@@ -148,7 +148,10 @@ public class PlayerMovement : MonoBehaviour {
                 if (plat.jump_height != 0) {
                     jumpSpeed = jumpHeightToJumpSpeed(plat.jump_height);
                 }
-            } 
+            }
+            //Jeez there's something really goofy about isGrounded.
+            canJump = true;
+
         }
 
 
