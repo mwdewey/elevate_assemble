@@ -54,6 +54,10 @@ public class UIBehavior : MonoBehaviour {
             {
                 ResourceSelect();
             }
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.LoadLevel("StartScene");
+        }
 
         //Display Area
         woodDisplay.text = woodCount.ToString();
