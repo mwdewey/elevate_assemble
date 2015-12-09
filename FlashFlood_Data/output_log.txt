@@ -1,0 +1,4056 @@
+Initialize engine version: 5.2.3f1 (f3d16a1fa2dd)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA NVS 5200M (ID=0x1140)
+    Vendor:   NVIDIA
+    VRAM:     977 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\Assembly-UnityScript.dll (this message is harmless)
+Loading C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\Assembly-UnityScript.dll into Unity Child Domain
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\websocket-sharp-with-proxy-support.dll (this message is harmless)
+Loading C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\websocket-sharp-with-proxy-support.dll into Unity Child Domain
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.047 seconds
+desktop: 1600x900 50Hz; virtual: 1600x900 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 1f50 -> priority: 1 
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 2.540650 ms
+
+Unloading 12 unused Assets to reduce memory usage. Loaded Objects now: 598.
+Total: 0.398845 ms (FindLiveObjects: 0.064055 ms CreateObjectMapping: 0.046360 ms MarkObjects: 0.268256 ms  DeleteObjects: 0.019110 ms)
+
+Platform assembly: C:\Users\Farkinator\Documents\GameDevI\elevate_assemble\FlashFlood_Data\Managed\Mono.Security.dll (this message is harmless)
+Character (UnityEngine.Animator)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+12/9/2015 4:19:56 PM|Error|WebSocket.SendAsync:0|A WebSocket connection isn't established.
+ERROR: An error has occurred in sending the data.
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+12/9/2015 4:19:56 PM|Debug|WebSocket.sendHttpRequest:0|A request to the server:
+                           GET /socket.io/?EIO=3&transport=websocket HTTP/1.1
+                           User-Agent: websocket-sharp/1.0
+                           Host: dvm.io:8081
+                           Upgrade: websocket
+                           Connection: Upgrade
+                           Sec-WebSocket-Key: OVkZJ3V6WFs+9oGKnl3ABA==
+                           Sec-WebSocket-Version: 13
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+12/9/2015 4:19:56 PM|Debug|WebSocket.sendHttpRequest:0|A response to this request:
+                           HTTP/1.1 101 Switching Protocols
+                           Upgrade: websocket
+                           Connection: Upgrade
+                           Sec-WebSocket-Accept: sjmJRn9pfRRH4m7oEfdY9pCMf5g=
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 7
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 89
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 17
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 8
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 60
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 48
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+3 91
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 94
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+3 54
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+3 21
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 39
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 67
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 95
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 44
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 77
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 45
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 60
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 75
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+3 10
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 24
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 30
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 65
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 11
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 84
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+3 89
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 13
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+3 90
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 84
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 61
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 15
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 33
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+3 32
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 67
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+3 52
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 94
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 90
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 39
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 3
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+1 64
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+2 73
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+Scene 'PuzzleStage' (-1) couldn't be loaded because it has not been added to the build settings or the asset bundle has not been loaded.
+To add a scene to the build settings use the menu File->Build Settings...
+ 
+(Filename:  Line: 385)
+
+12/9/2015 4:20:11 PM|Trace|WebSocket.close:0|Begin closing the connection.
+12/9/2015 4:20:11 PM|Info |WebSocket.close:0|Closing the connection has already been done.
+12/9/2015 4:20:11 PM|Debug|WebSocket.closeHandshake:0|Was clean?: True
+                             sent: True
+                             received: True
+12/9/2015 4:20:11 PM|Trace|WebSocket.close:0|End closing the connection.
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Can not play a disabled audio source
+ 
+(Filename:  Line: 1659)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.203261 ms
+
+Unloading 182 unused Assets to reduce memory usage. Loaded Objects now: 487.
+Total: 0.744252 ms (FindLiveObjects: 0.049546 ms CreateObjectMapping: 0.075380 ms MarkObjects: 0.508554 ms  DeleteObjects: 0.110063 ms)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 0.715940 ms
+
+Unloading 11 unused Assets to reduce memory usage. Loaded Objects now: 609.
+Total: 0.438836 ms (FindLiveObjects: 0.059455 ms CreateObjectMapping: 0.056270 ms MarkObjects: 0.311078 ms  DeleteObjects: 0.011324 ms)
+
+Character (UnityEngine.Animator)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 4 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.220602 ms
+
+Unloading 7 unused Assets to reduce memory usage. Loaded Objects now: 603.
+Total: 0.595968 ms (FindLiveObjects: 0.056270 ms CreateObjectMapping: 0.029019 ms MarkObjects: 0.496168 ms  DeleteObjects: 0.012740 ms)
+
+Character (UnityEngine.Animator)
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.980426 ms
+
+Unloading 462 unused Assets to reduce memory usage. Loaded Objects now: 490.
+Total: 0.995875 ms (FindLiveObjects: 0.069010 ms CreateObjectMapping: 0.080335 ms MarkObjects: 0.631358 ms  DeleteObjects: 0.214463 ms)
+
