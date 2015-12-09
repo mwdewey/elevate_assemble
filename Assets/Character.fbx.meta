@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 59edc8bb20e7b0149a13bfceaf3e7ef9
-timeCreated: 1449628894
+guid: 9f7810916d50f0a44979081a37702eb0
+timeCreated: 1449629219
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -66,7 +66,6 @@ ModelImporter:
     400056: mesh
     400058: player
     4300000: player
-    7400000: Take 001
     9500000: //RootNode
     13700000: player
   materials:
@@ -110,7 +109,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 1
+    normalImportMode: 0
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0

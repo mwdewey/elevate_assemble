@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: cb647299c2b728245a2f031d7fd13a1a
-timeCreated: 1449630267
+guid: c1be7d4fc9a6d23478799e3b8b0837e4
+timeCreated: 1449628895
 licenseType: Free
 ModelImporter:
   serializedVersion: 18
@@ -91,7 +91,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 1.03999996
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -109,7 +109,7 @@ ModelImporter:
   tangentSpace:
     normalSmoothAngle: 60
     splitTangentsAcrossUV: 1
-    normalImportMode: 0
+    normalImportMode: 1
     tangentImportMode: 1
   importAnimation: 1
   copyAvatar: 0
@@ -123,7 +123,7 @@ ModelImporter:
     armStretch: .0500000007
     legStretch: .0500000007
     feetSpacing: 0
-    rootMotionBoneName: 
+    rootMotionBoneName: joi_legs
     hasTranslationDoF: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   animationType: 2
