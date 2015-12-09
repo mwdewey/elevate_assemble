@@ -8,12 +8,16 @@ public class ObjectPlacement : MonoBehaviour
     bool isFacingLeft;
     bool prevFacing;
     bool hasCube;
+    bool isPlatform;
     AudioSource audio_source;
     List<Material> orgMaterials;
 
     public GameObject rock;
     public GameObject grass;
     public GameObject wood;
+    public GameObject rockColumn;
+    public GameObject grassColumn;
+    public GameObject woodColumn;
     public Material invalid_material;
     public UIBehavior UIHandler;
     public AudioClip placement_clip;
@@ -21,26 +25,45 @@ public class ObjectPlacement : MonoBehaviour
     public float placement_X = 0.0f;
     public float placement_Y= 0.0f;
 
+    // key bindings
+    List<KeyCode> rockSpawn_key;
+    List<KeyCode> woodSpawn_key;
+    List<KeyCode> grassSpawn_key;
+    List<KeyCode> structSwitch_key;
+    List<KeyCode> spawnKeys;
+
     // Use this for initialization
     void Start()
     {
         isFacingLeft = false;
         prevFacing = false;
         hasCube = false;
+        isPlatform = true;
         heldObject = null;
         audio_source = GetComponent<AudioSource>();
 
         orgMaterials = new List<Material>();
+
+        // key bindings
+        rockSpawn_key =    new List<KeyCode>() { KeyCode.Alpha2 };
+        woodSpawn_key =    new List<KeyCode>() { KeyCode.Alpha3 };
+        grassSpawn_key =   new List<KeyCode>() { KeyCode.Alpha1 };
+        structSwitch_key = new List<KeyCode>() { KeyCode.BackQuote };
+
+        spawnKeys = new List<KeyCode>();
+        spawnKeys.AddRange(rockSpawn_key);
+        spawnKeys.AddRange(woodSpawn_key);
+        spawnKeys.AddRange(grassSpawn_key);
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (GetKeysDown(spawnKeys)) spawnObject();
 
-        if (Input.GetKeyDown(KeyCode.Alpha1) ||
-            Input.GetKeyDown(KeyCode.Alpha2) ||
-            Input.GetKeyDown(KeyCode.Alpha3)) spawnObject();
-
+        if (GetKeysDown(structSwitch_key)) switchStructure();
+        
+        // change material if it is invalid
         if (heldObject != null)
         {
             Material[] tempMats = heldObject.GetComponent<MeshRenderer>().materials;
@@ -48,7 +71,6 @@ public class ObjectPlacement : MonoBehaviour
             {
                 if (heldObject.GetComponent<sticky>().isColliding && hasCube)
                 {
-                    Debug.Log("BLERFDSDFSFDG");
                     tempMats[i] = invalid_material;
                 }
 
@@ -61,50 +83,35 @@ public class ObjectPlacement : MonoBehaviour
 
     }
 
+    bool GetKeysDown(List<KeyCode> keys)
+    {
+        foreach (KeyCode key in keys) if (Input.GetKeyDown(key)) return true;
+        return false;
+    }
+
     void spawnObject()
     {
         // spawn cube
         if (!hasCube)
         {
-            // rock
-            if (Input.GetKeyDown(KeyCode.Alpha1))
+            // if resources don't exist, do nothing
+            if (GetKeysDown(rockSpawn_key) && UIHandler.rockCount == 0) return;
+            if (GetKeysDown(grassSpawn_key) && UIHandler.grassCount == 0) return;
+            if (GetKeysDown(woodSpawn_key) && UIHandler.woodCount == 0) return;
+
+            if (isPlatform)
             {
-                if (UIHandler.rockCount > 0)
-                {
-                    heldObject = (GameObject)Instantiate(rock, new Vector3(0, 0, 0), Quaternion.identity);
-                    UIHandler.rockCount--;
-                    audio_source.PlayOneShot(placement_clip, 1f);
-                }
-
-                else return;
+                if (GetKeysDown(rockSpawn_key)) heldObject = (GameObject)Instantiate(rock, new Vector3(0, 0, 0), Quaternion.identity);
+                if (GetKeysDown(woodSpawn_key)) heldObject = (GameObject)Instantiate(wood, new Vector3(0, 0, 0), Quaternion.identity);
+                if (GetKeysDown(grassSpawn_key)) heldObject = (GameObject)Instantiate(grass, new Vector3(0, 0, 0), Quaternion.identity);
             }
-
-            // grass
-            if (Input.GetKeyDown(KeyCode.Alpha2))
+            else
             {
-                if (UIHandler.grassCount > 0)
-                {
-                    heldObject = (GameObject)Instantiate(grass, new Vector3(0, 0, 0), Quaternion.identity);
-                    UIHandler.grassCount--;
-                    audio_source.PlayOneShot(placement_clip, 1f);
-                }
-
-                else return;
+                if (GetKeysDown(rockSpawn_key)) heldObject = (GameObject)Instantiate(rockColumn, new Vector3(0, 0, 0), Quaternion.identity);
+                if (GetKeysDown(woodSpawn_key)) heldObject = (GameObject)Instantiate(woodColumn, new Vector3(0, 0, 0), Quaternion.identity);
+                if (GetKeysDown(grassSpawn_key)) heldObject = (GameObject)Instantiate(grassColumn, new Vector3(0, 0, 0), Quaternion.identity);
             }
-
-            // wood
-            if (Input.GetKeyDown(KeyCode.Alpha3))
-            {
-                if (UIHandler.woodCount > 0)
-                {
-                    heldObject = (GameObject)Instantiate(wood, new Vector3(0, 0, 0), Quaternion.identity);
-                    UIHandler.woodCount--;
-                    audio_source.PlayOneShot(placement_clip, 1f);
-                }
-
-                else return;
-            }
-
+        
             heldObject.transform.parent = this.transform;
             heldObject.transform.localPosition = new Vector3(placement_X, placement_Y, 0);
 
@@ -121,10 +128,60 @@ public class ObjectPlacement : MonoBehaviour
             heldObject.transform.parent = null;
             heldObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
             heldObject.GetComponent<sticky>().checkSticky = true;
-            heldObject.GetComponent<MeshCollider>().isTrigger = false;
+
+            if (heldObject.GetComponent<MeshCollider>() == true) heldObject.GetComponent<MeshCollider>().isTrigger = false;
+            if (heldObject.GetComponent<BoxCollider>() == true)  heldObject.GetComponent<BoxCollider>().isTrigger  = false;
+
+            switch (heldObject.GetComponent<sticky>().structType)
+            {
+                case "grass": UIHandler.grassCount--; break;
+                case "rock":  UIHandler.rockCount--;  break;
+                case "wood":  UIHandler.woodCount--;  break;
+            }
 
             hasCube = false;
         }
+    }
+
+    void switchStructure()
+    {
+        isPlatform = !isPlatform;
+        
+        if (hasCube)
+        {
+            string structType = heldObject.GetComponent<sticky>().structType;
+            Destroy(heldObject);
+
+            if (isPlatform)
+            {
+                switch (structType)
+                {
+                    case "grass": heldObject = (GameObject)Instantiate(grass, new Vector3(0, 0, 0), Quaternion.identity); break;
+                    case "rock": heldObject = (GameObject)Instantiate(rock, new Vector3(0, 0, 0), Quaternion.identity); break;
+                    case "wood": heldObject = (GameObject)Instantiate(wood, new Vector3(0, 0, 0), Quaternion.identity); break;
+                    default: break;
+                }
+            }
+
+            else
+            {
+                switch (structType)
+                {
+                    case "grass": heldObject = (GameObject)Instantiate(grassColumn, new Vector3(0, 0, 0), Quaternion.identity); break;
+                    case "rock": heldObject = (GameObject)Instantiate(rockColumn, new Vector3(0, 0, 0), Quaternion.identity); break;
+                    case "wood": heldObject = (GameObject)Instantiate(woodColumn, new Vector3(0, 0, 0), Quaternion.identity); break;
+                    default: break;
+                }
+            }
+
+            heldObject.transform.parent = this.transform;
+            heldObject.transform.localPosition = new Vector3(placement_X, placement_Y, 0);
+
+            // save org materials
+            orgMaterials.Clear();
+            foreach (Material m in heldObject.GetComponent<MeshRenderer>().materials) orgMaterials.Add(m);
+        }
+
     }
 
 
