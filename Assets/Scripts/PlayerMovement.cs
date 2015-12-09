@@ -83,9 +83,13 @@ public class PlayerMovement : MonoBehaviour {
     }
     void UpdatePlayer() {
         timeSinceLastGrounded += Time.deltaTime;
+        
         //There's something very very goofy about controller's isGrounded variable.
         if ((controller.collisionFlags & CollisionFlags.Below) != 0) {
             canJump = true;
+            if (controller.isGrounded) {
+                animator.SetTrigger("isGrounded");
+            }
             timeSinceLastGrounded = 0;
         } else {
             canJump = false;
@@ -123,6 +127,8 @@ public class PlayerMovement : MonoBehaviour {
             //Could potentially add Double or Wall jump. We'll see how far we get.
             if (canJump) {
                 velocity = groundedJump(velocity);
+                animator.SetTrigger("jump");
+                
             }
         }
         //HORIZONTAL MOVEMENT
