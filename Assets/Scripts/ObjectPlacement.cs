@@ -12,6 +12,8 @@ public class ObjectPlacement : MonoBehaviour
     AudioSource audio_source;
     List<Material> orgMaterials;
 
+    Animator animator;
+
     public GameObject rock;
     public GameObject grass;
     public GameObject wood;
@@ -54,6 +56,8 @@ public class ObjectPlacement : MonoBehaviour
         spawnKeys.AddRange(rockSpawn_key);
         spawnKeys.AddRange(woodSpawn_key);
         spawnKeys.AddRange(grassSpawn_key);
+
+        animator = GetComponentInChildren<Animator>();
     }
 
     // Update is called once per frame
@@ -128,7 +132,7 @@ public class ObjectPlacement : MonoBehaviour
             heldObject.transform.parent = null;
             heldObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePositionZ | RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationY;
             heldObject.GetComponent<sticky>().checkSticky = true;
-
+            animator.SetTrigger("build");
             if (heldObject.GetComponent<MeshCollider>() == true) heldObject.GetComponent<MeshCollider>().isTrigger = false;
             if (heldObject.GetComponent<BoxCollider>() == true)  heldObject.GetComponent<BoxCollider>().isTrigger  = false;
 
