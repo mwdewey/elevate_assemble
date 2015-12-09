@@ -3,6 +3,7 @@ using System.Collections;
 
 public class LevelGoalScript : MonoBehaviour {
     public string nextLevel;
+    public float levelGoal;
 
 	// Use this for initialization
 	void Start () {
@@ -11,15 +12,10 @@ public class LevelGoalScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
-    
-    void OnTriggerEnter(Collider col)
-    {
-        if(col.GetComponent("PlayerMovement") == true)
+        if (gameObject.transform.position.y >= levelGoal)
         {
             Application.LoadLevel(nextLevel);
-            print("LevelHit");
         }
+
     }
 }

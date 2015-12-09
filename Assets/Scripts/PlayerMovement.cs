@@ -15,12 +15,13 @@ public class PlayerMovement : MonoBehaviour {
     // if we're grounded.
     bool canJump;
     float timeSinceLastGrounded;
-
+    //Save it so we don't encounter weirdness with bonking our head on the bottom of a platform.
+    float orig_stepOffset;
     Vector3 velocity;
     CharacterController controller;
     AudioSource audio_source;
 
-
+    Animator animator;
 
 
     /*
@@ -59,6 +60,8 @@ public class PlayerMovement : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        animator = GetComponentInChildren<Animator>();
+        Debug.Log(animator);
         isMovingHorizontally = false;
         isFacingLeft = false;
         prevFacing = false;
@@ -68,7 +71,7 @@ public class PlayerMovement : MonoBehaviour {
         jumpSpeed = jumpHeightToJumpSpeed(jumpHeight);
         orig_jumpSpeed = jumpSpeed;
         controller = GetComponent<CharacterController>();
-        
+        orig_stepOffset = controller.stepOffset;
         audio_source = GetComponent<AudioSource>();
         z_plane = transform.position.z;
 	}
@@ -91,9 +94,12 @@ public class PlayerMovement : MonoBehaviour {
         transform.position = new Vector3(transform.position.x, transform.position.y, z_plane);
         // If we bonk our head on the ceiling then set the y velocity to 0.
         if ((controller.collisionFlags & CollisionFlags.Above) != 0) {
+            //controller.stepOffset = 0;
             velocity.y = -gravity * Time.deltaTime;
             velocity.x = 0;
             controller.Move(velocity * Time.deltaTime);
+        } else {
+            //controller.stepOffset = orig_stepOffset;
         }
         //JUMPING AND GRAVITY
         //Gravity.
@@ -128,6 +134,12 @@ public class PlayerMovement : MonoBehaviour {
             velocity.x = -moveSpeed;
         } else {
             velocity.x = 0;
+        }
+        //Animation for horizontal movement.
+        if(velocity.x != 0) {
+            animator.SetBool("walking", true);
+        } else {
+            animator.SetBool("walking", false);
         }
         // If we are not facing the way we rotate our transform.
         if (isFacingLeft != prevFacing) transform.Rotate(0f, 180f, 0f);
