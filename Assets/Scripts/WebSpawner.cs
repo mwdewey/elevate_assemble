@@ -8,6 +8,8 @@ using WebSocketSharp;
 public class WebSpawner : MonoBehaviour {
 
     public float minObjRate;  // objects per second
+    public float spawnHeight;
+
     float timeSinceLastObj;
     WebSocket ws;
     List<ResourceObject> resources;
@@ -18,6 +20,7 @@ public class WebSpawner : MonoBehaviour {
     float prevWood;
     float countSync;
     List<GameObject> spawnedResources;
+
 
     public GameObject rock;  // index 1
     public GameObject grass; // index 2
@@ -87,7 +90,9 @@ public class WebSpawner : MonoBehaviour {
             timeSinceLastObj = 0;
             Debug.Log(resObj.objType + " " + resObj.position);
 
-            Vector3 pos = new Vector3(map((float)resObj.position, 0, 100f, -6f, 6f),transform.position.y + 7, -5);
+            float leftBound = GetComponent<screenWrapping>().leftBound;
+            float rightBound = GetComponent<screenWrapping>().rightBound;
+            Vector3 pos = new Vector3(map((float)resObj.position, 0, 100f, leftBound, rightBound), transform.position.y + spawnHeight, transform.position.z);
             Quaternion rot;
             GameObject objTemp = null;
 
