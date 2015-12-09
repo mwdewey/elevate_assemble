@@ -139,6 +139,8 @@ public class ObjectPlacement : MonoBehaviour
                 case "wood":  UIHandler.woodCount--;  break;
             }
 
+            audio_source.PlayOneShot(placement_clip, 1f);
+
             hasCube = false;
         }
     }
