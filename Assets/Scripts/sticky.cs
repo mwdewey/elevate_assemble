@@ -4,6 +4,7 @@ using System.Collections.Generic;
 
 public class sticky : MonoBehaviour {
 
+    public string structType;
     public float timeLimit = 1.0f;
     public float movement_give = 0.2f;
 
@@ -36,9 +37,7 @@ public class sticky : MonoBehaviour {
             else if ((Time.realtimeSinceStartup - startTime) >= timeLimit)
             {
                 Rigidbody rb = this.GetComponent<Rigidbody>();
-                //rb.constraints = RigidbodyConstraints.FreezeAll;
                 Destroy(rb);
-                //this.GetComponent<MeshRenderer>().material = this.GetComponent<Materials>().frozen;
                 isFrozen = true;
             }
         }
