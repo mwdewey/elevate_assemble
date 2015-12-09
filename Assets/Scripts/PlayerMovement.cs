@@ -74,12 +74,21 @@ public class PlayerMovement : MonoBehaviour {
     void UpdatePlayer() {
         //The z of the player should never change.
         transform.position = new Vector3(transform.position.x, transform.position.y, z_plane);
+        // If we bonk our head on the ceiling then set the y velocity to 0.
+        if ((controller.collisionFlags & CollisionFlags.Above) != 0) {
+            velocity.y = -gravity * Time.deltaTime;
+            Debug.Log("Are we grounded " + controller.isGrounded);
+        }
         //JUMPING AND GRAVITY
-
+        Debug.Log(controller.attachedRigidbody);
         //Gravity.
         if (!controller.isGrounded) {
+            Debug.Log("You're in the aaiiiiiir");
+            
             velocity.y -= gravity * Time.deltaTime;
+
         } else {
+
             velocity.y = -gravity * Time.deltaTime;
         }
 
@@ -90,10 +99,7 @@ public class PlayerMovement : MonoBehaviour {
             audio_source.PlayOneShot(land_jump_sound, vol);
         }
         isGroundedPrev = controller.isGrounded;
-        // If we bonk our head on the ceiling then set the y velocity to 0.
-        if ((controller.collisionFlags & CollisionFlags.Above) != 0) {
-            velocity.y = 0;
-        } 
+
         if (Input.GetKeyDown(KeyCode.Space)) {
             //Could potentially add Double or Wall jump. We'll see how far we get.
             if (controller.isGrounded) {
@@ -113,6 +119,7 @@ public class PlayerMovement : MonoBehaviour {
         // If we are not facing the way we rotate our transform.
         if (isFacingLeft != prevFacing) transform.Rotate(0f, 180f, 0f);
         prevFacing = isFacingLeft;
+        Debug.Log(velocity.y);
         controller.Move(velocity * Time.deltaTime);
     }
     void UpdateCamera() {
@@ -142,10 +149,9 @@ public class PlayerMovement : MonoBehaviour {
                     jumpSpeed = jumpHeightToJumpSpeed(plat.jump_height);
                 }
             } 
-        } else {
-            Debug.Log("You can't jump now!");
         }
-        
+
+
     }
     
     float jumpHeightToJumpSpeed(float inHeight) {
