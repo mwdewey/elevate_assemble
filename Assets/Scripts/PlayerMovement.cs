@@ -11,12 +11,15 @@ public class PlayerMovement : MonoBehaviour {
     bool prevFacing;
     bool isMovingHorizontally;
     bool isGroundedPrev;
+    // controller.isGrounded does not work as I would expect on slopes. I'm going to use collision flags to determine
+    // if we're grounded.
+    bool canJump;
+    float timeSinceLastGrounded;
 
     Vector3 velocity;
     CharacterController controller;
     AudioSource audio_source;
 
-    bool canJump;
 
 
 
@@ -48,6 +51,9 @@ public class PlayerMovement : MonoBehaviour {
     public float camera_offset_z = 0.5f;
     public float camera_angle = 0.0f;
 
+    //This number affects how long after being grounded the player is still able to jump. Needed to solve a problem
+    //Where you sometimes cannot jump if you're running down a slope
+    public float slopeFallGracePeriod;
     //Audio 
     public AudioClip land_jump_sound;
 
@@ -58,11 +64,11 @@ public class PlayerMovement : MonoBehaviour {
         prevFacing = false;
         isGroundedPrev = true;
         canJump = true;
-        
+        timeSinceLastGrounded = 0;
         jumpSpeed = jumpHeightToJumpSpeed(jumpHeight);
         orig_jumpSpeed = jumpSpeed;
         controller = GetComponent<CharacterController>();
-
+        
         audio_source = GetComponent<AudioSource>();
         z_plane = transform.position.z;
 	}
@@ -73,18 +79,25 @@ public class PlayerMovement : MonoBehaviour {
         UpdateCamera();
     }
     void UpdatePlayer() {
+        timeSinceLastGrounded += Time.deltaTime;
+        //There's something very very goofy about controller's isGrounded variable.
+        if ((controller.collisionFlags & CollisionFlags.Below) != 0) {
+            canJump = true;
+            timeSinceLastGrounded = 0;
+        } else {
+            canJump = false;
+        }
         //The z of the player should never change.
         transform.position = new Vector3(transform.position.x, transform.position.y, z_plane);
         // If we bonk our head on the ceiling then set the y velocity to 0.
         if ((controller.collisionFlags & CollisionFlags.Above) != 0) {
             velocity.y = -gravity * Time.deltaTime;
-            Debug.Log("Are we grounded " + controller.isGrounded);
+            velocity.x = 0;
+            controller.Move(velocity * Time.deltaTime);
         }
         //JUMPING AND GRAVITY
         //Gravity.
-        if (!controller.isGrounded) {
-            Debug.Log("You're in the aaiiiiiir");
-            
+        if (!canJump) {
             velocity.y -= gravity * Time.deltaTime;
 
         } else {
@@ -119,7 +132,6 @@ public class PlayerMovement : MonoBehaviour {
         // If we are not facing the way we rotate our transform.
         if (isFacingLeft != prevFacing) transform.Rotate(0f, 180f, 0f);
         prevFacing = isFacingLeft;
-        Debug.Log(velocity.y);
         controller.Move(velocity * Time.deltaTime);
     }
     void UpdateCamera() {
@@ -138,6 +150,7 @@ public class PlayerMovement : MonoBehaviour {
         return inVec;
     }
     void OnControllerColliderHit(ControllerColliderHit hit) {
+
         if((controller.collisionFlags & CollisionFlags.Below) != 0){
             //Go get the platform attributes.
             PlatformAttributes plat = hit.gameObject.GetComponent<PlatformAttributes>();
@@ -149,14 +162,13 @@ public class PlayerMovement : MonoBehaviour {
                     jumpSpeed = jumpHeightToJumpSpeed(plat.jump_height);
                 }
             }
-            //Jeez there's something really goofy about isGrounded.
-            canJump = true;
+           // canJump = true;
 
-        }
+        } 
 
 
     }
-    
+
     float jumpHeightToJumpSpeed(float inHeight) {
         /*
             Holy 8th grade physics, batman! Using the standard motion equation:
